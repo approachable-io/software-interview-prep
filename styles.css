@@ -1,0 +1,43 @@
+body {
+    height: 100vh;
+    width: 70%;
+    margin: 5% auto 0;
+    font-family: sans-serif;
+}
+
+.text-container {
+    box-sizing: border-box;
+    padding: 0px 35px;
+}
+
+h1{
+    margin-bottom: 0px;
+}
+h2{
+    margin-top: 0px;
+}
+
+p{
+    font-size: 18px;
+}
+
+img {
+    display: block;
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.large-central-logo {
+    width: 100%;
+}
+
+.top-left-logo {
+    width: 40px;
+}
+
+@media only screen and (max-width: 760px) {
+    body{
+        width: 90%;
+    }
+}
