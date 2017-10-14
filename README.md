@@ -76,6 +76,8 @@ The difference between the repository you started with and this new repository i
 
 ### Make your Pull Request
 
+### Wait for your changes to get accepted
+
 
 
 
