@@ -39,15 +39,15 @@ Once you have that copied, open your command line (cmd.exe on Windows, Terminal 
 
 Once you're in your desired directory, run this command:
 ```bash
-$ git clone git@github.com:redxtech/when.git
+$ git clone git@github.com:redxtech/software-interview-prep.git
 ```
-That will be cloned into a directory called `when`. If I wanted to make it a different directory, I would run this 
+That will be cloned into a directory called `software-interview-prep`. If I wanted to make it a different directory, I would run this 
 command:
 ```bash
-$ git clone git@github.com:redxtech/when.git ~/cloned-folder
+$ git clone git@github.com:redxtech/software-interview-prep.git ~/cloned-folder
 ```
 
-Once it finishes, you can `cd` into the directory with `$ cd when`.
+Once it finishes, you can `cd` into the directory with `$ cd software-interview-prep`.
 
 ### Install dependencies
 
@@ -85,6 +85,35 @@ already been created, run:
 
 ```bash
 $ git checkout <branch name>
+```
+
+### Making your changes
+
+Now that we have our own branch, we can begin to contribute. First, we need to make some changes. What I'm doing 
+right now, is editing the `README.md` file, so I would run:
+
+```bash
+$ vim README.md
+```
+
+Any other editor or IDE will work just fine (I personally use WebStorm), I just chose vim because it's powerful and 
+available on most computers. Once we've made all the changes necessary, we need to stage them:
+
+```bash
+$ git add README.md
+```
+
+You can stage all files by using `.` instead of a filename. This is useful when you have more than one file that has 
+changed. You can check the status of your changes with:
+
+```bash
+$ git status
+```
+
+And see what changes you've made since your latest commit with:
+
+```bash
+$ git diff
 ```
 
 ## Want to contribute in another way?
