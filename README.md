@@ -43,13 +43,15 @@ Once you're in your desired directory, enter this command: `$ git clone git@gith
 
 Once it finishes, you can `cd` into the directory with `$ cd when`.
 
+### Install dependencies
+
 Typically, most software projects will have dependencies that need to be installed before you can begin to work on 
 the project. This will most likely be mentioned in the README of the project, but if not, you will have to explore 
 and find out yourself. Most node/js projects will use npm as the package manager, so you can just run `$ npm install`
  (or `$ yarn`) and it will install everything for you (provided you have node & npm or yarn installed on your 
  computer already). Most python projects will have a requirements.txt file with all of the packages needed. You can 
- install these with `$ pip install -r requirements.txt`. This differs based on what languages the projects use, and 
- who writes them, so reading the README is the best way to find out.
+ install these with `$ pip install -r requirements.txt`. Some projects don't have any dependencies at all This differs
+ based on what languages the projects use, and who writes them, so reading the README is the best way to find out.
 
 ## Want to contribute in another way?
 Anyone can help make this project better - check out [issues](https://github.com/approachable-io/approachable-io/issues)!
