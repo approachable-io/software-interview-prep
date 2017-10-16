@@ -7,7 +7,7 @@ If you're a Git/Github expert, feel free to skip some sections. If you have neve
 ### Install Git
 Here is a detailed explanation of [how to install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-### Make a fork of the project
+### Fork the project
 A fork is a copy of a project. In this case, you will be copying the project [software-interview-prep](https://github.com/approachable-io/software-interview-prep), making a change to that copy, and then making a Pull Request - a request for the original product to incorporate your changes.
 
 Click the `Fork` button in the top right corner of the screen to fork the repository.
@@ -22,65 +22,26 @@ And then it should look like this ![After Fork Screen](images/after-fork-screen.
 
 The difference between the repository you started with and this new repository is that your username should appear in the top left. If your username is `grace-hopper`, it should say something like `grace-hopper / software-interview-prep` and the line below it should read `forked from approachable-io / software-interview-prep`.
 
+### Clone the fork
 
+Once you've forked the repo, you need to be able to edit it on your local machine.
 
-### Download Visual Studio Code
+To do this, click on the green clone or download button, and click the clipboard to copy the repo URL.
 
-> If you are wondering why we chose VSCode, please read this [supplemental documentation](supplemental-documentation/text-editor-explanation.md)
+![Copy Clone URL](images/command-line/get-clone-url.png)
 
-[Follow the instructions here](https://code.visualstudio.com/)
+In this picture, you can see that the clone is using SSH format (git@github.com:\<user\>/\<repo\>.git). You may also 
+use 
+the HTTPS format if you prefer (https://github.com/\<user\>/\<repo\>).
 
-### Download this project from your Github fork
+Once you have that copied, open your command line (cmd.exe on Windows, Terminal on macOS, and if you use linux you'll
+ know where it is), `cd` to the directory you want to clone the repo into. For me it will be `~` (`/home/redxtech/`).
 
-#### Mac
+Once you're in your desired directory, enter this command: `$ git clone git@github.com:redxtech/when.git`. That will be cloned into a directory called `when`. If
+ I wanted to make it a different directory, I would run this command: `$ git clone git@github.com:redxtech/when.git 
+~/cloned-folder`
 
-#### PC
-
-
-
-
-
-
-
-
-
-### Create new file for new question
-
-#### Copy another file as a starting point
-
-#### Update the title
-
-#### Update the h1
-
-#### Update the content with your interview question
-
-
-
-
-
-### Update other files with appropriate links
-
-#### Update technical.html or whiteboard.html
-
-#### Update sitemap to include your new file
-
-
-
-
-
-### Push your changes to Github
-
-
-
-
-
-### Make your Pull Request
-
-### Wait for your changes to get accepted
-
-
-
-
+Once it finishes, you can `cd` into the directory with `$ cd when`.
 
 ## Want to contribute in another way?
 Anyone can help make this project better - check out [issues](https://github.com/approachable-io/approachable-io/issues)!
