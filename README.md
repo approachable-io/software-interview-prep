@@ -164,5 +164,25 @@ $ git push origin <branch>
 
 This way, you can have your branch on your fork as well as on your local computer.
 
+### Stash & Pop
+
+Sometime, you make a few changes, and you're not quite ready to commit them, but you need to store them somewhere 
+safe, and you don't want to make a separate branch for them? This is the time for stashing and popping!
+
+If I've made changes to the `README.md` file, and I wanted to stash it away, all I have to do is:
+
+```bash
+$ git stash
+```
+
+Once you've done what you need to do, you can un-stash (pop) the changes, and begin to work on them again! To do 
+this, just run:
+
+```bash
+$ git stash pop
+```
+
+And your changes are there again.
+
 ## Want to contribute in another way?
 Anyone can help make this project better - check out [issues](https://github.com/approachable-io/approachable-io/issues)!
