@@ -116,5 +116,26 @@ And see what changes you've made since your latest commit with:
 $ git diff
 ```
 
+### Committing changes
+
+Once you've staged your changes, you're ready to commit them. Committing is marking a change in your project, and you
+ can reset to that commit easily. To commit your staged changes, run:
+
+```bash
+$ git commit -m "made changes"
+```
+
+The `-m` and `"made changes"` mean commit with message `"made changes"`. Every commit needs a message, as it 
+describes what the commit did. Try to make these messages useful, as not doing so can make it harder if you need to 
+backtrack, and if anyone else wants to see what you've done.
+
+If you're lazy, and want to save as many keystrokes as possible, you can run:
+
+```bash
+$ git commit -ma "made changes"
+```
+
+The `a` means stage all changes. This removes the need to `$ git add .`, as it does this already.
+
 ## Want to contribute in another way?
 Anyone can help make this project better - check out [issues](https://github.com/approachable-io/approachable-io/issues)!
