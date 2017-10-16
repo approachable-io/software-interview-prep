@@ -137,5 +137,32 @@ $ git commit -ma "made changes"
 
 The `a` means stage all changes. This removes the need to `$ git add .`, as it does this already.
 
+### Pushing commits
+
+Once you've made your changes and committed them, you'll want to share your changes to the original repo (the one you
+ forked). The changes you've made will stay on your local machine until you push them. Pushing is quite simple. Most 
+ of the time, it's only two words to type in:
+
+```bash
+$ git push
+```
+
+However, sometimes you want to specify a location to push to, and a branch to push to. By default, when you clone a 
+repo from github, it adds the `origin` remote location, and sets it as upstream, so just using `push` works fine. 
+Sometimes, you might not want to send it the default location:
+
+```bash
+$ git push <remote> <branch>
+```
+
+The repo that you cloned will be set as remote `origin`, so `$ git push remote master` will push to the master branch
+ on your fork on github. If you want to send it to your branch that you're working on, you will need to specify that:
+
+```bash
+$ git push origin <branch>
+```
+
+This way, you can have your branch on your fork as well as on your local computer.
+
 ## Want to contribute in another way?
 Anyone can help make this project better - check out [issues](https://github.com/approachable-io/approachable-io/issues)!
