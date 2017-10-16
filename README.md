@@ -59,5 +59,33 @@ and find out yourself. Most node/js projects will use npm as the package manager
  install these with `$ pip install -r requirements.txt`. Some projects don't have any dependencies at all This differs
  based on what languages the projects use, and who writes them, so reading the README is the best way to find out.
 
+Once you have all the dependencies installed, it's time to add your contribution.
+
+### Creating a branch
+
+Most projects utilize git's branch feature, as they should. It's a powerful tool. I wont go into depth explaining it,
+ but you can find many resources online. In a few words, they are ways to let multiple people work on separate things
+ at the same time.
+
+To create a branch for your contribution, run this command:
+
+```bash
+$ git checkout -b <branch name>
+```
+
+This runs creates a new branch in the repo, and checks it out (opens it). If there are already multiple branches, and
+ you want to make a branched based off of another branch, use:
+ 
+ ```bash
+ $ git checkout -b <branch name> master
+ ```
+
+Where master is the name of the branch you want to base your new branch off of. To switch to another branch that has 
+already been created, run:
+
+```bash
+$ git checkout <branch name>
+```
+
 ## Want to contribute in another way?
 Anyone can help make this project better - check out [issues](https://github.com/approachable-io/approachable-io/issues)!
