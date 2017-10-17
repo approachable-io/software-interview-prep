@@ -89,14 +89,12 @@ git checkout <branch name>
 ### Making your changes
 
 Now that we have our own branch, we can begin to contribute. First, we need to make some changes. What I'm doing 
-right now, is editing the `README.md` file, so I would run:
+right now, is editing the `README.md` file, so I would open up any text editor, and open the file.
 
-```bash
-vim README.md
-```
+Any editor or IDE will work just fine (I personally use WebStorm for projects and sublime for one off files), Some 
+popular editors include Atom, VS Code, and even vim or nano if you have experience using either.
 
-Any other editor or IDE will work just fine (I personally use WebStorm), I just chose vim because it's powerful and 
-available on most computers. Once we've made all the changes necessary, we need to stage them:
+Once we've made all the changes necessary, we need to stage them:
 
 ```bash
 git add README.md
