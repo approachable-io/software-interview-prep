@@ -38,24 +38,24 @@ Once you have that copied, open your command line (cmd.exe on Windows, Terminal 
 
 Once you're in your desired directory, run this command:
 ```bash
-$ git clone https://github.com/redxtech/software-interview-prep.git
+git clone https://github.com/redxtech/software-interview-prep.git
 ```
 That will be cloned into a directory called `software-interview-prep`. If I wanted to make it a different directory, I would run this 
 command:
 ```bash
-$ git clone https://github.com/redxtech/software-interview-prep.git ~/cloned-folder
+git clone https://github.com/redxtech/software-interview-prep.git ~/cloned-folder
 ```
 
-Once it finishes, you can `cd` into the directory with `$ cd software-interview-prep`.
+Once it finishes, you can `cd` into the directory with `cd software-interview-prep`.
 
 ### Install dependencies
 
 Typically, most software projects will have dependencies that need to be installed before you can begin to work on 
 the project. This will most likely be mentioned in the README of the project, but if not, you will have to explore 
-and find out yourself. Most node/js projects will use npm as the package manager, so you can just run `$ npm install`
- (or `$ yarn`) and it will install everything for you (provided you have node & npm or yarn installed on your 
+and find out yourself. Most node/js projects will use npm as the package manager, so you can just run `npm install`
+ (or `yarn`) and it will install everything for you (provided you have node & npm or yarn installed on your 
  computer already). Most python projects will have a requirements.txt file with all of the packages needed. You can 
- install these with `$ pip install -r requirements.txt`. Some projects don't have any dependencies at all This differs
+ install these with `pip install -r requirements.txt`. Some projects don't have any dependencies at all This differs
  based on what languages the projects use, and who writes them, so reading the README is the best way to find out.
 
 Once you have all the dependencies installed, it's time to add your contribution.
@@ -69,21 +69,21 @@ Most projects utilize git's branch feature, as they should. It's a powerful tool
 To create a branch for your contribution, run this command:
 
 ```bash
-$ git checkout -b <branch name>
+git checkout -b <branch name>
 ```
 
 This runs creates a new branch in the repo, and checks it out (opens it). If there are already multiple branches, and
  you want to make a branched based off of another branch, use:
  
  ```bash
- $ git checkout -b <branch name> master
+ git checkout -b <branch name> master
  ```
 
 Where master is the name of the branch you want to base your new branch off of. To switch to another branch that has 
 already been created, run:
 
 ```bash
-$ git checkout <branch name>
+git checkout <branch name>
 ```
 
 ### Making your changes
@@ -92,27 +92,27 @@ Now that we have our own branch, we can begin to contribute. First, we need to m
 right now, is editing the `README.md` file, so I would run:
 
 ```bash
-$ vim README.md
+vim README.md
 ```
 
 Any other editor or IDE will work just fine (I personally use WebStorm), I just chose vim because it's powerful and 
 available on most computers. Once we've made all the changes necessary, we need to stage them:
 
 ```bash
-$ git add README.md
+git add README.md
 ```
 
 You can stage all files by using `.` instead of a filename. This is useful when you have more than one file that has 
 changed. You can check the status of your changes with:
 
 ```bash
-$ git status
+ogit status
 ```
 
 And see what changes you've made since your latest commit with:
 
 ```bash
-$ git diff
+git diff
 ```
 
 ### Committing changes
@@ -121,7 +121,7 @@ Once you've staged your changes, you're ready to commit them. Committing is mark
  can reset to that commit easily. To commit your staged changes, run:
 
 ```bash
-$ git commit -m "made changes"
+git commit -m "made changes"
 ```
 
 The `-m` and `"made changes"` mean commit with message `"made changes"`. Every commit needs a message, as it 
@@ -131,10 +131,10 @@ backtrack, and if anyone else wants to see what you've done.
 If you're lazy, and want to save as many keystrokes as possible, you can run:
 
 ```bash
-$ git commit -ma "made changes"
+git commit -ma "made changes"
 ```
 
-The `a` means stage all changes. This removes the need to `$ git add .`, as it does this already.
+The `a` means stage all changes. This removes the need to `git add .`, as it does this already.
 
 ### Pushing commits
 
@@ -143,7 +143,7 @@ Once you've made your changes and committed them, you'll want to share your chan
  of the time, it's only two words to type in:
 
 ```bash
-$ git push
+git push
 ```
 
 However, sometimes you want to specify a location to push to, and a branch to push to. By default, when you clone a 
@@ -151,14 +151,14 @@ repo from github, it adds the `origin` remote location, and sets it as upstream,
 Sometimes, you might not want to send it the default location:
 
 ```bash
-$ git push <remote> <branch>
+git push <remote> <branch>
 ```
 
-The repo that you cloned will be set as remote `origin`, so `$ git push remote master` will push to the master branch
+The repo that you cloned will be set as remote `origin`, so `git push origin master` will push to the master branch
  on your fork on github. If you want to send it to your branch that you're working on, you will need to specify that:
 
 ```bash
-$ git push origin <branch>
+git push origin <branch>
 ```
 
 This way, you can have your branch on your fork as well as on your local computer.
@@ -171,14 +171,14 @@ safe, and you don't want to make a separate branch for them? This is the time fo
 If I've made changes to the `README.md` file, and I wanted to stash it away, all I have to do is:
 
 ```bash
-$ git stash
+git stash
 ```
 
 Once you've done what you need to do, you can un-stash (pop) the changes, and begin to work on them again! To do 
 this, just run:
 
 ```bash
-$ git stash pop
+git stash pop
 ```
 
 And your changes are there again.
