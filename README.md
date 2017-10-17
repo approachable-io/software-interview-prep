@@ -106,7 +106,7 @@ You can stage all files by using `.` instead of a filename. This is useful when 
 changed. You can check the status of your changes with:
 
 ```bash
-ogit status
+git status
 ```
 
 And see what changes you've made since your latest commit with:
@@ -114,6 +114,8 @@ And see what changes you've made since your latest commit with:
 ```bash
 git diff
 ```
+
+To exit this screen press `q`.
 
 ### Committing changes
 
