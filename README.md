@@ -30,21 +30,20 @@ To do this, click on the green clone or download button, and click the clipboard
 
 ![Copy Clone URL](images/command-line/get-clone-url.png)
 
-In this picture, you can see that the clone is using SSH format (git@github.com:\<user\>/\<repo\>.git). You may also 
-use 
-the HTTPS format if you prefer (https://github.com/\<user\>/\<repo\>).
+In this picture, you can see that the clone is using HTTPS format (https://github.com/\<user\>/\<repo\>.git). You may
+ also  use the HTTPS format if you prefer (git@github.com:\<user\>/\<repo\>).
 
 Once you have that copied, open your command line (cmd.exe on Windows, Terminal on macOS, and if you use linux you'll
  know where it is), `cd` to the directory you want to clone the repo into. For me it will be `~` (`/home/redxtech/`).
 
 Once you're in your desired directory, run this command:
 ```bash
-$ git clone git@github.com:redxtech/software-interview-prep.git
+$ git clone https://github.com/redxtech/software-interview-prep.git
 ```
 That will be cloned into a directory called `software-interview-prep`. If I wanted to make it a different directory, I would run this 
 command:
 ```bash
-$ git clone git@github.com:redxtech/software-interview-prep.git ~/cloned-folder
+$ git clone https://github.com/redxtech/software-interview-prep.git ~/cloned-folder
 ```
 
 Once it finishes, you can `cd` into the directory with `$ cd software-interview-prep`.
