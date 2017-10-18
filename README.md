@@ -209,5 +209,39 @@ And your changes are there again.
 
 ![Git Pop](images/command-line/pop-command.png)
 
+### Making a Pull Request (PR)
+
+Once you've pushed your changes to your fork, you will need to make a PR to the repo that you forked from. Making a 
+RP is quite simple. All you have to do is go to the github page of your fork, and click on the Compare & pull request
+ button that will appear once you have some commits that the original repo doesn't have.
+
+![Compare & PR](images/compare-and-pr.png)
+
+Once you click on that, it will bring you to a page where you can look at the commits, files changed, and choose what
+ to add some details to your PR. Choose an appropriate title for your PR, and also a description.
+
+![Edit PR](images/open-a-pr.png)
+
+If there is a green check mark at the top saying "Able to merge", then the PR is perfect (in terms of merge 
+conflicts). You don't need to do anything else special to make it work. If there is a red x, and you are unable to 
+merge, no worries, this can easily be remedied. This happens when someone else makes edits to the same part of a file
+ as you while your were working on yours. You can either resolve the conflicts by yourself (recommended), or get 
+ someone else (more experience with the specific codebase) to resolve the conflicts for you. Most people expect you 
+ to be able to solve your own, however if you're contributing to a beginner friendly repo, most people would be happy
+ to walk you through resolving the conflicts so that you learn how to do in the proper manner according to their 
+ codebase.
+
+Make sure that the dropdown menus near the top of the page are correct. "base fork" is the repo that you want to make
+ a PR into. "base" is the branch you want to PR into on that repo. "head fork" is your fork of the repo. "compare" is
+ that branch that you pushed your changes into.
+
+Once everything looks all good to go, click on "Create pull request", and boom, it's done. Now you just need to wait 
+for someone to review it. In most projects, each PR needs to be approved by at least one person before it can be 
+merged. They can either reject it, requests changes, or approve it. If they request some changes, adding those 
+changes is as simple as pushing to the same branch on your fork again. Once your PR is deemed worthy, one of the 
+maintainers will merge it, and congrats, your PR has been added to the codebase!
+
+![Post PR Creation](images/post-pr-creation.png)
+
 ## Want to contribute in another way?
 Anyone can help make this project better - check out [issues](https://github.com/approachable-io/approachable-io/issues)!
