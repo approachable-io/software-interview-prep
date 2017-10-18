@@ -36,7 +36,8 @@ In this picture, you can see that the clone is using HTTPS format (https://githu
 Once you have that copied, open your command line (cmd.exe on Windows, Terminal on macOS, and if you use linux you'll
  know where it is), `cd` to the directory you want to clone the repo into. For me it will be `~` (`/home/redxtech/`).
 
-Once you're in your desired directory, run this command:
+Once you're in your desired directory, run this command (remember to replace the `redxtech` with your github name - 
+you want to clone your fork, not mine):
 ```bash
 git clone https://github.com/redxtech/software-interview-prep.git
 ```
@@ -55,7 +56,7 @@ the project. This will most likely be mentioned in the README of the project, bu
 and find out yourself. Most node/js projects will use npm as the package manager, so you can just run `npm install`
  (or `yarn`) and it will install everything for you (provided you have node & npm or yarn installed on your 
  computer already). Most python projects will have a requirements.txt file with all of the packages needed. You can 
- install these with `pip install -r requirements.txt`. Some projects don't have any dependencies at all This differs
+ install these with `pip install -r requirements.txt`. Some projects don't have any dependencies at all. This differs
  based on what languages the projects use, and who writes them, so reading the README is the best way to find out.
 
 Once you have all the dependencies installed, it's time to add your contribution.
@@ -91,7 +92,7 @@ git checkout <branch name>
 Now that we have our own branch, we can begin to contribute. First, we need to make some changes. What I'm doing 
 right now, is editing the `README.md` file, so I would open up any text editor, and open the file.
 
-Any editor or IDE will work just fine (I personally use WebStorm for projects and sublime for one off files), Some 
+Any editor or IDE will work just fine (I personally use WebStorm for projects and sublime for one-off files), Some 
 popular editors include Atom, VS Code, and even vim or nano if you have experience using either.
 
 Once we've made all the changes necessary, we need to stage them:
@@ -166,7 +167,7 @@ This way, you can have your branch on your fork as well as on your local compute
 ### Stash & Pop
 
 Sometime, you make a few changes, and you're not quite ready to commit them, but you need to store them somewhere 
-safe, and you don't want to make a separate branch for them? This is the time for stashing and popping!
+safe. This is the time for stashing and popping!
 
 If I've made changes to the `README.md` file, and I wanted to stash it away, all I have to do is:
 
