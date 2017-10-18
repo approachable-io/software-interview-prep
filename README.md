@@ -173,6 +173,10 @@ safe. This is the time for stashing and popping!
 If I've made changes to the `README.md` file, and I wanted to stash it away, all I have to do is:
 
 ```bash
+git add .
+```
+and
+```bash
 git stash
 ```
 
