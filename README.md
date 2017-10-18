@@ -31,7 +31,7 @@ To do this, click on the green clone or download button, and click the clipboard
 ![Copy Clone URL](images/command-line/get-clone-url.png)
 
 In this picture, you can see that the clone is using HTTPS format (https://github.com/\<user\>/\<repo\>.git). You may
- also  use the HTTPS format if you prefer (git@github.com:\<user\>/\<repo\>).
+ also  use the SSH format if you prefer (git@github.com:\<user\>/\<repo\>).
 
 Once you have that copied, open your command line (cmd.exe on Windows, Terminal on macOS, and if you use linux you'll
  know where it is), `cd` to the directory you want to clone the repo into. For me it will be `~` (`/home/redxtech/`).
