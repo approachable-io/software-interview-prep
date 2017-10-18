@@ -103,7 +103,8 @@ git add README.md
 ```
 
 You can stage all files by using `.` instead of a filename. This is useful when you have more than one file that has 
-changed. You can check the status of your changes with:
+changed, like when I added the images. I'm also going to run `git add images` to stage the entire directory that I 
+put the images in. You can check the status of your changes with:
 
 ```bash
 git status
@@ -157,13 +158,18 @@ git push <remote> <branch>
 ```
 
 The repo that you cloned will be set as remote `origin`, so `git push origin master` will push to the master branch
- on your fork on github. If you want to send it to your branch that you're working on, you will need to specify that:
+ on your fork on github. If you want to send it to your branch that you're working on (this is what I'm going to do 
+ here), you will need to specify that:
 
 ```bash
 git push origin <branch>
 ```
 
 This way, you can have your branch on your fork as well as on your local computer.
+
+Sometimes, you will have to enter your github credentials, to make sure that you have write access to the repo. Just 
+enter your github username and password and it will work. This can be avoided using SSH & SSH Keys, however that's 
+way outside the scope of this guide.
 
 ### Stash & Pop
 
