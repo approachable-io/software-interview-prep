@@ -213,7 +213,7 @@ And your changes are there again.
 ### Making a Pull Request (PR)
 
 Once you've pushed your changes to your fork, you will need to make a PR to the repo that you forked from. Making a 
-RP is quite simple. All you have to do is go to the github page of your fork, and click on the Compare & pull request
+PR is quite simple. All you have to do is go to the github page of your fork, and click on the Compare & pull request
  button that will appear once you have some commits that the original repo doesn't have.
 
 ![Compare & PR](images/compare-and-pr.png)
