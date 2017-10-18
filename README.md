@@ -67,7 +67,7 @@ contribution.
 
 ### Creating a branch
 
-Most projects utilize git's branch feature, as they should. It's a powerful tool. I wont go into depth explaining it,
+Most projects utilize git's branch feature, as they should. It's a powerful tool. I won't go into depth explaining it,
  but you can find many resources online. In a few words, they are ways to let multiple people work on separate things
  at the same time.
 
@@ -77,7 +77,7 @@ To create a branch for your contribution, run this command:
 git checkout -b <branch name>
 ```
 
-This runs creates a new branch in the repo, and checks it out (opens it). If there are already multiple branches, and
+This creates a new branch in the repo, and checks it out (opens it). If there are already multiple branches, and
  you want to make a branched based off of another branch, use:
  
  ```bash
@@ -184,10 +184,10 @@ way outside the scope of this guide.
 
 ### Stash & Pop
 
-Sometime, you make a few changes, and you're not quite ready to commit them, but you need to store them somewhere 
+Sometimes, you make a few changes, and you're not quite ready to commit them, but you need to store them somewhere 
 safe. This is the time for stashing and popping!
 
-If I've made changes to the `README.md` file, and I wanted to stash it away, all I have to do is:
+If you've made changes to the `README.md` file, and you wanted to stash it away, all you have to do is:
 
 ```bash
 git add .
