@@ -28,7 +28,7 @@ Once you've forked the repo, you need to be able to edit it on your local machin
 
 To do this, click on the green clone or download button, and click the clipboard to copy the repo URL.
 
-![Copy Clone URL](images/command-line/get-clone-url.png)
+![Copy Clone URL](images/copy-clone-url.png)
 
 In this picture, you can see that the clone is using HTTPS format (https://github.com/\<user\>/\<repo\>.git). You may
  also  use the SSH format if you prefer (git@github.com:\<user\>/\<repo\>).
