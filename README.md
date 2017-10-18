@@ -91,7 +91,7 @@ git checkout <branch name>
 ### Making your changes
 
 Now that we have our own branch, we can begin to contribute. First, we need to make some changes. What I'm doing 
-right now, is editing the `README.md` file, so I would open up any text editor, and open the file.
+right now, is adding images to the `README.md` file, so I would open up any text editor, and open the file.
 
 Any editor or IDE will work just fine (I personally use WebStorm for projects and sublime for one-off files), Some 
 popular editors include Atom, VS Code, and even vim or nano if you have experience using either.
