@@ -49,6 +49,8 @@ git clone https://github.com/redxtech/software-interview-prep.git ~/cloned-folde
 
 Once it finishes, you can `cd` into the directory with `cd software-interview-prep`.
 
+![Git Clone](images/command-line/clone-commmand.png)
+
 ### Install dependencies
 
 Typically, most software projects will have dependencies that need to be installed before you can begin to work on 
@@ -88,6 +90,8 @@ already been created, run:
 git checkout <branch name>
 ```
 
+![Git Branch](images/command-line/branch-command.png)
+
 ### Making your changes
 
 Now that we have our own branch, we can begin to contribute. First, we need to make some changes. What I'm doing 
@@ -118,6 +122,8 @@ git diff
 
 To exit this screen press `q`.
 
+![Git Status](images/command-line/status-command.png)
+
 ### Committing changes
 
 Once you've staged your changes, you're ready to commit them. Committing is marking a change in your project, and you
@@ -138,6 +144,8 @@ git commit -ma "made changes"
 ```
 
 The `a` means stage all changes. This removes the need to `git add .`, as it does this already.
+
+![Git Commit](images/command-line/commit-command.png)
 
 ### Pushing commits
 
@@ -171,6 +179,8 @@ Sometimes, you will have to enter your github credentials, to make sure that you
 enter your github username and password and it will work. This can be avoided using SSH & SSH Keys, however that's 
 way outside the scope of this guide.
 
+![Git Push](images/command-line/push-command.png)
+
 ### Stash & Pop
 
 Sometime, you make a few changes, and you're not quite ready to commit them, but you need to store them somewhere 
@@ -186,6 +196,8 @@ and
 git stash
 ```
 
+![Git Stash](images/command-line/stash-command.png)
+
 Once you've done what you need to do, you can un-stash (pop) the changes, and begin to work on them again! To do 
 this, just run:
 
@@ -194,6 +206,8 @@ git stash pop
 ```
 
 And your changes are there again.
+
+![Git Pop](images/command-line/pop-command.png)
 
 ## Want to contribute in another way?
 Anyone can help make this project better - check out [issues](https://github.com/approachable-io/approachable-io/issues)!
