@@ -12,13 +12,13 @@ A fork is a copy of a project. In this case, you will be copying the project [so
 
 Click the `Fork` button in the top right corner of the screen to fork the repository.
 
-![Fork Github Repository](images/github-fork-repository.png)
+![Fork Github Repository](images/fork-repo.png)
 
 If everything goes smoothly it should look like this for a few seconds
 
-![Forking Load Screen](images/forking-load-screen.png)
+![Forking Load Screen](images/fork-loading.png)
 
-And then it should look like this ![After Fork Screen](images/after-fork-screen.png)
+And then it should look like this ![After Fork Screen](images/post-fork.png)
 
 The difference between the repository you started with and this new repository is that your username should appear in the top left. If your username is `grace-hopper`, it should say something like `grace-hopper / software-interview-prep` and the line below it should read `forked from approachable-io / software-interview-prep`.
 
