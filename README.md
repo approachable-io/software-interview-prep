@@ -59,7 +59,8 @@ and find out yourself. Most node/js projects will use npm as the package manager
  install these with `pip install -r requirements.txt`. Some projects don't have any dependencies at all. This differs
  based on what languages the projects use, and who writes them, so reading the README is the best way to find out.
 
-Once you have all the dependencies installed, it's time to add your contribution.
+Once you have all the dependencies installed (none are needed for the repo we are using), it's time to add your 
+contribution.
 
 ### Creating a branch
 
