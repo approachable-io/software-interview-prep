@@ -19,7 +19,23 @@
         <a href="../../whiteboard.html">
             More whiteboard interview questions
         </a>
-        <p>Make it say Fizz or Buzz depending on a few things</p>
+        <h3>Question:</h3>
+
+        <p>Write a loop that prints numbers from 1 to 100.  If the number is divisible by 3, print 'Fizz'.  If the number is divisible by 5, print 'Buzz'.  If the number is divisible by 15, print 'FizzBuzz'</p>
+
+        <h4>Approach: </h4>
+
+        <p>Most programming languages have either a modulus operator or function that can be called.  This will give you the remainder from dividing one number by another, for example, in Javascript you would use var a % var b.  If the number is divisible, there will be no remainder.</p>
+
+        <p>Another point to consider is how your loop will be evaluated.  In most cases it will be necessary to check the given conditions in reverse order.  Check that the number is divisible by 15 first, then check if it is divisible by 5, then check if divisible by 3, and, if not, print the number.  This is a little gotcha, because 15 is divisible by 3 and 5, you will never get to that part of your conditional statement, unless it is first.</p>
+
+        <div class="hidden-answer">
+            <input type="checkbox" id="fizzbuzz-answer">
+            <label for="fizzbuzz-answer">Click to see an answer written in JavaScript</label>
+            <div class="content">
+                <script src="https://gist.github.com/Jeff-Duke/4e2296bd1a05413d42a0b5e62c213607.js"></script>
+            </div>
+        </div>
     </div>
     <footer>
         <hr>
