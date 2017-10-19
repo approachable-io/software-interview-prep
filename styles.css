@@ -41,3 +41,27 @@ img {
         width: 90%;
     }
 }
+
+.hidden-answer input[type="checkbox"] {
+    display: none;
+}
+
+.hidden-answer label {
+    color: -webkit-link;
+    cursor: pointer;
+    display: block;
+    font-size: 1rem;
+    padding: .5rem 0;
+    text-decoration: underline
+}
+
+.content {
+    height: 0;
+    padding: 0 .5rem;
+    overflow: auto;
+}
+
+.hidden-answer input[type="checkbox"]:checked ~ label ~ .content {
+    height: auto;
+    min-height: 4rem;
+}
