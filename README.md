@@ -54,16 +54,9 @@ Once it finishes, you can `cd` into the directory with `cd software-interview-pr
 
 ### Install dependencies
 
-Typically, most software projects will have dependencies that need to be installed before you can begin to work on 
-the project. This will most likely be mentioned in the README of the project, but if not, you will have to explore 
-and find out yourself. Most node/js projects will use npm as the package manager, so you can just run `npm install`
- (or `yarn`) and it will install everything for you (provided you have node & npm or yarn installed on your 
- computer already). Most python projects will have a requirements.txt file with all of the packages needed. You can 
- install these with `pip install -r requirements.txt`. Some projects don't have any dependencies at all. This differs
- based on what languages the projects use, and who writes them, so reading the README is the best way to find out.
+At this point, many projects will require you to install dependencies. Put simply, this is external software which is needed for the product to function correctly. 
 
-Once you have all the dependencies installed (none are needed for the repo we are using), it's time to add your 
-contribution.
+Luckily, this repo does not require dependencies but if you would like to learn more, [click here.](supplemental-documentation/dependencies.md)
 
 ### Creating a branch
 
