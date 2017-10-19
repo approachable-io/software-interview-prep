@@ -54,7 +54,9 @@ Once it finishes, you can `cd` into the directory with `cd software-interview-pr
 
 ### Install dependencies
 
-At this point, many projects will require you to install dependencies. Put simply, this is external software which is needed for the product to function correctly. Luckily, this repo does not require dependencies but if you would like to learn more, [click here](supplimental-documentation/dependencies.md)
+At this point, many projects will require you to install dependencies. Put simply, this is external software which is needed for the product to function correctly. 
+
+Luckily, this repo does not require dependencies but if you would like to learn more, [click here.](supplemental-documentation/dependencies.md)
 
 ### Creating a branch
 
