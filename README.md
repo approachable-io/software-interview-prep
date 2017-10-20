@@ -8,7 +8,7 @@ If you're a Git/Github expert, feel free to skip some sections. If you have neve
 Here is a detailed explanation of [how to install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 ### Fork the project
-A fork is a copy of a project. In this case, you will be copying the project [software-interview-prep](https://github.com/approachable-io/software-interview-prep), make a change to that copy, and then make a Pull Request. A Pull Request is a request for the original project to include your changes.
+A fork is a copy of a project. In this case, you will be copying the project [software-interview-prep](https://github.com/approachable-io/software-interview-prep), making a change to that copy, and then making a Pull Request. A Pull Request is a request for the original project to include your changes.
 
 Click the `Fork` button in the top right corner of the screen to fork the repository.
 
