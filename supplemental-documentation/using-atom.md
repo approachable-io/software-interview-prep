@@ -7,7 +7,7 @@ to this repository using the Atom text editor. Atom is available for free
 Once you have Atom installed and opened, you'll be ready to create your new
 question.
 
-## Add your project to Atom
+### Add your project to Atom
 
 To get started, you'll want to add this repository to Atom as a new project.
 
@@ -27,7 +27,7 @@ probably named `software-interview-prep`), select the folder, and accept
 
 ![Selecting the correct project directory.][select-project-folder]
 
-## Add a new HTML file for your question
+### Add a new HTML file for your question
 
 Now that you've added this repository to Atom as a project, you can create a
 new `.html` file with your question.
@@ -52,7 +52,7 @@ ending with `.html`:
 
 ![Naming the new file.][name-new-file]
 
-## Adding your finished question to the list
+### Adding your finished question to the list
 
 Once you've finished writing the HTML file for your new question, you should see
 that your file's color has changed to green in the tree view:
@@ -74,7 +74,7 @@ shown below (which matches the existing link elements in the file). Note the
 
 ![Adding your question to the general list. The link tag should follow the same format as the others in the file.][add-question-to-list]
 
-## Next steps
+### Next steps
 
 Now you're ready to stage and commit your changes and submit a pull request!
 Return to the main guide (README.md) for instructions on how to do this.
