@@ -81,10 +81,10 @@ Return to the main guide (README.md) for instructions on how to do this.
 
 
 
-[add-project]: images/editor-atom/add-project.png
-[select-project-folder]: images/editor-atom/select-project-folder.png
-[expand-tree-view]: images/editor-atom/expand-tree-view.png
-[add-new-file]: images/editor-atom/add-new-file.png
-[name-new-file]: images/editor-atom/name-new-file.png
-[finished-question]: images/editor-atom/finished-question.png
-[add-question-to-list]: images/editor-atom/add-question-to-list.png
+[add-project]: ../images/editor-atom/add-project.png
+[select-project-folder]: ../images/editor-atom/select-project-folder.png
+[expand-tree-view]: ../images/editor-atom/expand-tree-view.png
+[add-new-file]: ../images/editor-atom/add-new-file.png
+[name-new-file]: ../images/editor-atom/name-new-file.png
+[finished-question]: ../images/editor-atom/finished-question.png
+[add-question-to-list]: ../images/editor-atom/add-question-to-list.png
