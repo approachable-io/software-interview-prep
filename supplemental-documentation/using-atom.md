@@ -57,7 +57,7 @@ ending with `.html`:
 Once you've finished writing the HTML file for your new question, you should see
 that your file's color has changed to green in the tree view:
 
-![A completed question in an HTML file.](finished-question)
+![A completed question in an HTML file.][finished-question]
 
 The last step is to add your question to the main list. If you wrote a whiteboard
 question, this list will be in `views/questions/whiteboard.html`; technical
