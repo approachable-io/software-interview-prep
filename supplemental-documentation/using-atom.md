@@ -77,7 +77,7 @@ shown below (which matches the existing link elements in the file). Note the
 ### Next steps
 
 Now you're ready to stage and commit your changes and submit a pull request!
-Return to the main guide (README.md) for instructions on how to do this.
+Return to the [main guide](../README.md) for instructions on how to do this.
 
 
 
