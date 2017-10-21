@@ -37,12 +37,12 @@ In this picture, you can see that the clone is using HTTPS format (h<span>ttps:/
 Once you have that copied, open your command line (cmd.exe on Windows, Terminal on macOS, and if you use linux you'll
  know where it is), `cd` to the directory you want to clone the repo into. For me it will be `~` (`/home/redxtech/`).
 
-Once you're in your desired directory, run this command (remember to replace the `redxtech` with your github name - 
+Once you're in your desired directory, run this command (remember to replace the `redxtech` with your github name -
 you want to clone your fork, not mine):
 ```bash
 git clone https://github.com/redxtech/software-interview-prep.git
 ```
-That will be cloned into a directory called `software-interview-prep`. If I wanted to make it a different directory, I would run this 
+That will be cloned into a directory called `software-interview-prep`. If I wanted to make it a different directory, I would run this
 command:
 ```bash
 git clone https://github.com/redxtech/software-interview-prep.git ~/cloned-folder
@@ -54,7 +54,7 @@ Once it finishes, you can `cd` into the directory with `cd software-interview-pr
 
 ### Install dependencies
 
-At this point, many projects will require you to install dependencies. Put simply, this is external software which is needed for the product to function correctly. 
+At this point, many projects will require you to install dependencies. Put simply, this is external software which is needed for the product to function correctly.
 
 Luckily, this repo does not require dependencies but if you would like to learn more, [click here.](supplemental-documentation/dependencies.md)
 
@@ -72,12 +72,12 @@ git checkout -b <branch name>
 
 This creates a new branch in the repo, and checks it out (opens it). If there are already multiple branches, and
  you want to make a branched based off of another branch, use:
- 
+
  ```bash
  git checkout -b <branch name> master
  ```
 
-Where master is the name of the branch you want to base your new branch off of. To switch to another branch that has 
+Where master is the name of the branch you want to base your new branch off of. To switch to another branch that has
 already been created, run:
 
 ```bash
@@ -90,14 +90,19 @@ git checkout <branch name>
 
 Now that we have our own branch, we can make our changes. There are two ways to edit files, either in GitHub, or with a text editor on your computer. Open the file containing the code in a code editor. You can use any code editing program you are comfortable with, popular choices are Atom, VS Code, and Sublime Text.
 
+See [this document](supplemental-documentation/using-atom.md) for more information
+about using the Atom text editor to create new files and add them to the main lists of
+interview questions. Even if you aren't using Atom, this document outlines the
+general process for adding a new problem.
+
 Once we've made all the changes necessary, we need to stage them:
 
 ```bash
 git add README.md
 ```
 
-You can stage all files by using `.` instead of a filename. This is useful when you have more than one file that has 
-changed, like when I added the images. I'm also going to run `git add images` to stage the entire directory that I 
+You can stage all files by using `.` instead of a filename. This is useful when you have more than one file that has
+changed, like when I added the images. I'm also going to run `git add images` to stage the entire directory that I
 put the images in. You can check the status of your changes with:
 
 ```bash
@@ -123,8 +128,8 @@ Once you've staged your changes, you're ready to commit them. Committing is mark
 git commit -m "made changes"
 ```
 
-The `-m` and `"made changes"` mean commit with message `"made changes"`. Every commit needs a message, as it 
-describes what the commit did. Try to make these messages useful, as not doing so can make it harder if you need to 
+The `-m` and `"made changes"` mean commit with message `"made changes"`. Every commit needs a message, as it
+describes what the commit did. Try to make these messages useful, as not doing so can make it harder if you need to
 backtrack, and if anyone else wants to see what you've done.
 
 If you're lazy, and want to save as many keystrokes as possible, you can run:
@@ -140,15 +145,15 @@ The `a` means stage all changes. This removes the need to `git add .`, as it doe
 ### Pushing commits
 
 Once you've made your changes and committed them, you'll want to share your changes to the original repo (the one you
- forked). The changes you've made will stay on your local machine until you push them. Pushing is quite simple. Most 
+ forked). The changes you've made will stay on your local machine until you push them. Pushing is quite simple. Most
  of the time, it's only two words to type in:
 
 ```bash
 git push
 ```
 
-However, sometimes you want to specify a location to push to, and a branch to push to. By default, when you clone a 
-repo from github, it adds the `origin` remote location, and sets it as upstream, so just using `push` works fine. 
+However, sometimes you want to specify a location to push to, and a branch to push to. By default, when you clone a
+repo from github, it adds the `origin` remote location, and sets it as upstream, so just using `push` works fine.
 Sometimes, you might not want to send it the default location:
 
 ```bash
@@ -156,7 +161,7 @@ git push <remote> <branch>
 ```
 
 The repo that you cloned will be set as remote `origin`, so `git push origin master` will push to the master branch
- on your fork on github. If you want to send it to your branch that you're working on (this is what I'm going to do 
+ on your fork on github. If you want to send it to your branch that you're working on (this is what I'm going to do
  here), you will need to specify that:
 
 ```bash
@@ -165,15 +170,15 @@ git push origin <branch>
 
 This way, you can have your branch on your fork as well as on your local computer.
 
-Sometimes, you will have to enter your github credentials, to make sure that you have write access to the repo. Just 
-enter your github username and password and it will work. This can be avoided using SSH & SSH Keys, however that's 
+Sometimes, you will have to enter your github credentials, to make sure that you have write access to the repo. Just
+enter your github username and password and it will work. This can be avoided using SSH & SSH Keys, however that's
 way outside the scope of this guide.
 
 ![Git Push](images/command-line/push-command.png)
 
 ### Stash & Pop
 
-Sometimes, you make a few changes, and you're not quite ready to commit them, but you need to store them somewhere 
+Sometimes, you make a few changes, and you're not quite ready to commit them, but you need to store them somewhere
 safe. This is the time for stashing and popping!
 
 If you've made changes to the `README.md` file, and you wanted to stash it away, all you have to do is:
@@ -188,7 +193,7 @@ git stash
 
 ![Git Stash](images/command-line/stash-command.png)
 
-Once you've done what you need to do, you can un-stash (pop) the changes, and begin to work on them again! To do 
+Once you've done what you need to do, you can un-stash (pop) the changes, and begin to work on them again! To do
 this, just run:
 
 ```bash
