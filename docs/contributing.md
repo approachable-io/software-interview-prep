@@ -2,11 +2,7 @@
 
 First off, thank you for considering contributing to our projects.  If this is one of your first contributions, welcome to the open source community!
 
-<<<<<<< HEAD
 ## What is an Approachable Open Source Project
-=======
-# What is an Approachable Open Source Project
->>>>>>> 12824369971a946c38cb8ac31764c775d5d03863
 ### An Approachable Open Source project will:
 
 - allow those who are interested and committed, regardless of skill level, contribute to the project.
@@ -20,6 +16,13 @@ Of course, `DRY` code written at a fast pace is still preferable to `WET` code w
 
 The bottom line is simple: If you would like to add to our project, please do!  Don't be afraid to get a little `WET`!
 
+## Code of Conduct
+In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
+
+Please be mindful that contributions to our projects come from people with varying levels of skill.
+
+[...See More](../code_of_conduct.md)
+
 ## How can I contribute
 The goal of Approachable IO is to create projects that allow developers of all experience levels to contribute to the project. Contributing to open source projects can be an intimidating endeavor, and Approachable IO is aiming to lower the complexity for those who wish to contribute to open source projects.
 
@@ -28,27 +31,16 @@ Some quick examples:
 - Following Tutorials on projects to help get your first Pull Requests in
 - Proposing new projects or features
 
-<<<<<<< HEAD
 ## Your First Contribution
-=======
-# Your First Contribution
->>>>>>> 12824369971a946c38cb8ac31764c775d5d03863
 
 Unsure where to begin contributing to Approachable IO? You can try out our [getting-started](https://github.com/approachable-io/getting-started#getting-started) project to go from no account to your first pull request.
 
 You can also take a look at our [issues](https://github.com/approachable-io/software-interview-prep) for either of the following labels to find a good start.
 
-<<<<<<< HEAD
 - `good first issue` labels are great for first time contributions with little to no code knowledge necessary
 - `help wanted issues` labels are good for collaborative talk on implementation or possible guidance needed 
 
 ## Submitting an Issue
-=======
-- `good first issue` labels are great for first time contributions with little to code knowledge necessary
-- `help wanted issues` labels are good for collaborative talk on implementation or possible guidance needed 
-
-# Submitting an Issue
->>>>>>> 12824369971a946c38cb8ac31764c775d5d03863
 
 If you find a typo, broken link, or simply want to suggest a feature, you can use GitHub's Issues. For help submitting an issue you can view GitHub's [quick article](https://help.github.com/articles/creating-an-issue/) on creating an issue.
 
