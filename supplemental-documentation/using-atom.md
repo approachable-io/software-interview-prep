@@ -60,8 +60,8 @@ that your file's color has changed to green in the tree view:
 ![A completed question in an HTML file.][finished-question]
 
 The last step is to add your question to the main list. If you wrote a whiteboard
-question, this list will be in `views/questions/whiteboard.html`; technical
-questions go in `views/questions/technical.html`.
+question, this list will be in `views/whiteboard.html`; technical
+questions go in `views/technical.html`.
 
 Open the relevant file (for us, it's `whiteboard.html`) and find the `<h1>`
 element with the text "Software Interview Whiteboard Questions" or
