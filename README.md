@@ -223,4 +223,4 @@ When you're ready, click on "Create pull request". This sends the request to the
 ![Post PR Creation](images/post-pr-creation.png)
 
 ## Want to contribute in another way?
-Anyone can help make this project better - check out [issues](https://github.com/approachable-io/approachable-io/issues)!
+Anyone can help make this project better - check out [issues](https://github.com/approachable-io/software-interview-prep/issues)!
