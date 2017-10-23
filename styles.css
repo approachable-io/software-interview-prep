@@ -65,3 +65,21 @@ img {
     height: auto;
     min-height: 4rem;
 }
+
+/* For Page 404 */
+
+.container__error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container__error h1{
+    margin-top: 0px;
+    font-size: 5em;
+}
+
+.sad_face{
+    width: 200px;
+}
