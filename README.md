@@ -213,7 +213,7 @@ Once you've pushed your changes to your fork, you will want to make a PR to the 
 
 ![Compare & PR](images/compare-and-pr.png)
 
-Clicking on this button will bring you to a page where you can look at the commits, files changed, and make comments if you would like. Choose an appropriate title for your PR, and also a description.
+Clicking on this button will bring you to a page where you can look at the commits, files changed, and make comments if you would like. Choose an appropriate title for your PR, and also a description. Many projects come with pull request template that will tell you what you should put in description. You should check if there is any, usually named `PULL_REQUEST_TEMPLATE.md` or `PRTemplate.md`. 
 
 ![Edit PR](images/open-a-pr.png)
 
