@@ -101,12 +101,12 @@ After adding your question file in the appropriate question directory you will w
 Once we've made all the changes necessary, we need to stage them:
 
 ```bash
-git add README.md
+git add .
 ```
 
-You can stage all files by using `.` instead of a filename. This is useful when you have more than one file that has
-changed, like when I added the images. I'm also going to run `git add images` to stage the entire directory that I
-put the images in. You can check the status of your changes with:
+You can stage specific files by using `git add <file>` instead of `.`. This is useful when you have more than one file that has
+changed, but only specific files you want to commit. You can also pass a directory, for example `git add images`, to stage the entire
+directory that I put the images in. You can check the status of your changes with:
 
 ```bash
 git status
