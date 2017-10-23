@@ -90,10 +90,13 @@ git checkout <branch name>
 
 Now that we have our own branch, we can make our changes. There are two ways to edit files, either in GitHub, or with a text editor on your computer. Open the file containing the code in a code editor. You can use any code editing program you are comfortable with, popular choices are Atom, VS Code, and Sublime Text.
 
-See [this document](supplemental-documentation/using-atom.md) for more information
-about using the Atom text editor to create new files and add them to the main lists of
-interview questions. Even if you aren't using Atom, this document outlines the
-general process for adding a new problem.
+People spend a lot of time choosing their favorite text editor, but don't get stuck here, Atom and VS Code are both great options, so we recommend simply picking one quickly.  For detailed help, see [Using Atom](supplemental-documentation/using-atom.md) or [Using VS Code](supplemental-documentation/using-vs-code) for more information about using a text editor to create new files and add them to the main lists of interview questions. 
+
+![Directory Views](images/directory-views-annotation.png)
+
+For the purpose of this project we will be adding an `html` file in one of the question directories located in `views\questions` with the name of your question as the file name.  If your question is a general technical question it would be placed in `questions\technical`.  If your question is asking for a code example it would be added to `questions\whiteboard`.  Remember to type the name in lowercase with `-` separating words instead of spaces.  If you made a copy of an existing question to get the basic formatting to be consistent, please make sure to update your `h1` and `title` to match your question.
+
+After adding your question file in the appropriate question directory you will want to add a link to the respective question list page in the views directory. You will be editing either `views\technical.html` or `views\whiteboard.html`.
 
 Once we've made all the changes necessary, we need to stage them:
 
