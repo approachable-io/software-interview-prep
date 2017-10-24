@@ -28,24 +28,21 @@ Once you've forked the repo, you need to be able to edit it on your local machin
 
 To do this, click on the green clone or download button, and click the clipboard to copy the repo URL.
 
-![Copy Clone URL](images/copy-clone-url.png)
+![Copy Clone URL](images/copy-clone-url.png "Screenshot of how to copy the clone URL")
 
-In this picture, you can see that the clone is using HTTPS format (h<span>ttps://git</span>hub.com/\<user\>/\<repo\>
-.git). You may
- also use the SSH format if you prefer (git<span>@github.c</span>om:\<user\>/\<repo\>).
+In this picture, you can see that the clone is using HTTPS format (`https://github.com/<user>/<repo>.git`). You may also use the SSH format if you prefer (`git@github.com:<user>/<repo>`).
 
-Once you have that copied, open your command line (cmd.exe on Windows, Terminal on macOS, and if you use linux you'll
- know where it is), `cd` to the directory you want to clone the repo into. For me it will be `~` (`/home/redxtech/`).
+Once you have that copied, open your command line (_cmd.exe_ on Windows, _Terminal_ on macOS, and if you use linux you'll know where it is), `cd` to the directory you want to clone the repo into.
 
-Once you're in your desired directory, run this command (remember to replace the `redxtech` with your github name -
-you want to clone your fork, not mine):
+Once you're in your desired directory, run this command (_remember to replace the `<your-username>` with your github username_):
+
 ```bash
-git clone https://github.com/redxtech/software-interview-prep.git
+git clone https://github.com/<your-username>/software-interview-prep.git
 ```
-That will be cloned into a directory called `software-interview-prep`. If I wanted to make it a different directory, I would run this
+That will be cloned into a directory called `software-interview-prep`. If I wanted to make it a different directory, such as `~/cloned-folder`, I would run this
 command:
 ```bash
-git clone https://github.com/redxtech/software-interview-prep.git ~/cloned-folder
+git clone https://github.com/<your-username>/software-interview-prep.git ~/cloned-folder
 ```
 
 Once it finishes, you can `cd` into the directory with `cd software-interview-prep`.
@@ -88,13 +85,20 @@ git checkout <branch name>
 
 ### Making your changes
 
-Now that we have our own branch, we can make our changes. There are two ways to edit files, either in GitHub, or with a text editor on your computer. Open the file containing the code in a code editor. You can use any code editing program you are comfortable with, popular choices are Atom, VS Code, and Sublime Text.
+Now that we have our own branch, we can make our changes. There are two ways to edit files, either in GitHub, or with a text editor on your computer. Open the file containing the code in a code editor. You can use any code editing program you are comfortable with, popular choices are _Atom_, _VS Code_, and _Sublime Text_.
 
-People spend a lot of time choosing their favorite text editor, but don't get stuck here, Atom and VS Code are both great options, so we recommend simply picking one quickly.  For detailed help, see [Using Atom](supplemental-documentation/using-atom.md) or [Using VS Code](supplemental-documentation/using-vs-code) for more information about using a text editor to create new files and add them to the main lists of interview questions. 
+People spend a lot of time choosing their favorite text editor, but don't get stuck here, _Atom_ and _VS Code_ are both great options, so we recommend simply picking one quickly.  For detailed help, see [Using Atom](supplemental-documentation/using-atom.md) or [Using VS Code](supplemental-documentation/using-vs-code) for more information about using a text editor to create new files and add them to the main lists of interview questions. 
 
 ![Directory Views](images/directory-views-annotation.png)
 
-For the purpose of this project we will be adding an `html` file in one of the question directories located in `views\questions` with the name of your question as the file name.  If your question is a general technical question it would be placed in `questions\technical`.  If your question is asking for a code example it would be added to `questions\whiteboard`.  Remember to type the name in lowercase with `-` separating words instead of spaces.  If you made a copy of an existing question to get the basic formatting to be consistent, please make sure to update your `h1` and `title` to match your question.
+For the purpose of this project we will be adding an `html` file in one of the question directories located in `views\questions` with the name of your question as the file name:
+
+- If your question is a general technical question it would be placed in `questions\technical`.
+- If your question is asking for a code example it would be added to `questions\whiteboard`.
+
+Remember to type the name in lowercase with `-` separating words instead of spaces (i.e.: for the _Fizz Buzz_ question, the file name must be _fizz-buzz.html_).
+
+If you made a copy of an existing question to get the basic formatting to be consistent, please make sure to update your `h1` and `title` to match your question (i.e.: for the _Fizz Buzz_ question, the _\<title\>_ and the _\<h1\>_ in the html file must be `<title>Fizz Buzz | Software Interview Whiteboard Questions </title>` and `<h1>Fizz Buzz</h1>`, respectively).
 
 After adding your question file in the appropriate question directory you will want to add a link to the respective question list page in the views directory. You will be editing either `views\technical.html` or `views\whiteboard.html`.
 
@@ -217,11 +221,34 @@ Clicking on this button will bring you to a page where you can look at the commi
 
 ![Edit PR](images/open-a-pr.png)
 
-If there is a green check mark at the top saying "Able to merge", then the PR is ready to go! You don't need to do anything else special to make it work. If there is a red x, this means that there is a conflict with the original repo. This conflict will need to be fixed before you can do a Pull Request. A conflict happens when two people edit the same file at the same time. If you have a conflict and are contributing to a beginner-friendly repo (like approachable-io), you can ask for advice on how to solve the conflict.
+If there is a green check mark at the top saying "Able to merge", then the PR is ready to go! You don't need to do anything else special to make it work.
 
-Once your code is ready to merge, make sure that the dropdown menus near the top of the page are correct. The options that should be selected are: "base fork" (the repo you are requesting to make a PR into), "base" (the branch in the original repo you want you code merged into), "head fork" (your fork of the repo), and "compare" (the branch you pushed your changes into).
+If there is a red x, this means that there is a conflict with the original repo: this conflict will need to be fixed before you can do a Pull Request.
 
-When you're ready, click on "Create pull request". This sends the request to the owner of the original repo, who will be reviewing your request. The person reviewing your request have a few options: they can reject your request, ask that you make some changes, or approve it. Once your PR is approved, your code will be merged into the original repo. Congrats, your PR has been added to the codebase!
+> A conflict happens when two people edit the same file at the same time.
+> 
+> If you have a conflict and are contributing to a beginner-friendly repo (like [approachable-io](https://github.com/approachable-io/approachable-io)), you can ask for advice on how to solve the conflict.
+
+Once your code is ready to merge, make sure that the dropdown menus near the top of the page are correct.
+
+![open-a-pr-options.png](images/open-a-pr-options.png "Dropdown menus with options for the pull request")
+
+The options that should be selected are:
+
+- "**base fork**" _(the repo you are requesting to make a PR into)_,
+- "**base**" _(the branch in the original repo you want you code merged into)_,
+- "**head fork**" _(your fork of the repo)_, and
+- "**compare**" _(the branch you pushed your changes into)_.
+
+When you're ready, click on "Create pull request": this sends the request to the owner of the original repo, who will be reviewing your request.
+
+The person reviewing your request have a few options:
+
+- They can reject your request,
+- Ask that you make some changes, or 
+- Approve it.
+
+Once your PR is approved, your code will be merged into the original repo. Congrats, your PR has been added to the codebase!
 
 ![Post PR Creation](images/post-pr-creation.png)
 
