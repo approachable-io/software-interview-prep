@@ -68,18 +68,18 @@ img {
 
 /* For Page 404 */
 
-.container__error {
+.container_error {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.container__error h1{
+.container_error h1{
     margin-top: 0px;
     font-size: 5em;
 }
 
 .sad_face{
-    width: 200px;
+    width: 100px;
 }
