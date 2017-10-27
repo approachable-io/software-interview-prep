@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Array Index | Software Interview Technical Questions </title>
+    <meta name="description" content="Creators of Approachable Open Source projects to allow anyone to start contribute to open source software, regardless of technical skill level.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <!-- Icon and Favicon Files -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../images/icons/favicon-16x16.png">
+    <link rel="manifest" href="../../../images/icons/manifest.json">
+    <link rel="mask-icon" href="../../../images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <a href="../../../index.html">
+        <img class="top-left-logo" src="../../../images/approachable-open-source-logo.png" alt="Approachable Open Source Logo" width="20px" />
+    </a>
+    <div class="text-container">
+        <h1>Why Array Index of an array in C starts with 0</h1>
+        <a href="../../technical.html">
+            More technical interview questions
+        </a>
+        <p>The array index in C starts with 0 because in C the name of an array is a pointer, which is a reference to a memory location. Therefore, an expression *(arr + n) or arr[n] locates an element n-locations away from the starting location because the index is used as an offset. Likewise, the first element of the array is exactly contained by the memory location that array refers (0 elements away), so it should be denoted as *(arr + 0) or *(arr) or arr[0].</p>
+        <p>C programming language has been designed this way, so indexing from 0 is inherent to the language.
+
+However, some languages give user a choice to start index from zero or any other positive integer. For an example, in Fortran, when an array is declared with integer a(10) (an array of 10 integer elements), the index starts from 1 and ends at 10. However, this behavior can be overridden using a statement like, integer a(0:9), declaring an array with indices from 0 to 9.</p>
+    <footer>
+        <hr>
+        <p class="text-container">An
+            <a href="https://github.com/approachable-io/welcome">Approachable Open Source</a> project from
+            <a href="http://www.approachable.io">Approachable IO</a>
+        </p>
+    </footer>
+</body>
+
+</html>
