@@ -41,6 +41,17 @@
             <a href="https://github.com/approachable-io/welcome">Approachable Open Source</a> project from
             <a href="http://www.approachable.io">Approachable IO</a>
         </p>
+        <p>Here is an example code to calculate the power of a number provided with the exponent</p>
+        <pre>
+          def power(base,exp):
+              if(exp==1):
+                  return(base)
+              if(exp!=1):
+                  return(base*power(base,exp-1))
+          base=int(input("Enter base: "))
+          exp=int(input("Enter exponential value: ")
+          print("Result:",power(base,exp))
+        </pre>
     </footer>
 </body>
 
