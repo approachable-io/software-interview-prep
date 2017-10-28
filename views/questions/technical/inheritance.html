@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Class vs Object | Software Interview Technical Questions </title>
+    <title>Inheritance | Software Interview Technical Questions </title>
     <meta name="description" content="Creators of Approachable Open Source projects to allow anyone to start contribute to open source software, regardless of technical skill level.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../../styles.css">
@@ -22,33 +22,26 @@
         <img class="top-left-logo" src="../../../images/approachable-open-source-logo.png" alt="Approachable Open Source Logo" width="20px" />
     </a>
     <div class="text-container">
-        <h1>Classes and Objects in OOP</h1>
+        <h1>Inheritance</h1>
         <a href="../../technical.html">
             More technical interview questions
         </a>
-        <p>What are classes and objects in OOP, and what's the distinction between the two?</p>
+        <p>What is inheritance, and why is it important in OOP?</p>
         <p>
-          A Class is a blueprint of sorts; it outlines what attributes and
-          functionalities a particular type of structure should have. For example,
-          a Car object could have color, top speed, and transmission type attributes
-          and accelerate, brake, and turn signal functions.
+          Inheritance further extends the sort of familial metaphor in OOP, and
+          much like the actual concept, it just means that child classes get
+          what their parents had (with the exception that no one need die for OOP
+          inheritance to take place, and child classes needn't fight over who gets
+          what).
         </p>
         <p>
-          An Object is an instance of a Class. For instance (if you'll excuse the pun),
-          myCar would be an instance of the class Car with color = gray, top
-          speed = 15mph, transmission type = automatic. It would inherit the methods
-          accelerate, brake, and turn signal functions from Car.
+          It's important to note that inheritance is for "is-a" relationships, not
+          for "has-a" relationships. For example, the class "Bathroom" should
+          inherit from the "Room" class (because a bathroom is a room), but a "Shower"
+          class should NOT inherit from "Bathroom" (because though a bathroom has
+          a shower, the statement "a shower is a bathroom" is both inaccurate and
+          markedly insalubrious).
         </p>
-        <p>An object is a member or an "instance" of a class.</p>
-        <p>If channel is a class, Start Sports, BBC, and ESPN are its objects. If water is a Class, "Fresh Lime Water" and "Soup" are its objects.
-<br/>
-Although you might find this explanation vague, this is the answer that I could think of.
-<br/>
-Here is how you can learn about and distinguish classes:
-<br/>
-Say you have a class "CAR"
-<br/>
-Its objects are Hyundai, Ford, Suzuki. It will have the same methods but different designs -> this is how you can relate objects and classes with the real world.</p>
     </div>
     <footer>
         <hr>
