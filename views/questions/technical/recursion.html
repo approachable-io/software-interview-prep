@@ -33,6 +33,17 @@
         <p>
             Recursion means "defining a problem in terms of itself". This can be a very powerful tool in writing algorithms. Recursion comes directly from Mathematics, where there are many examples of expressions written in terms of themselves. For example, the Fibonacci sequence is defined as: F(i) = F(i-1) + F(i-2)
         </p>
+        <p>Here is an example code to calculate the power of a number provided with the exponent</p>
+        <pre>
+          def power(base,exp):
+              if(exp==1):
+                  return(base)
+              if(exp!=1):
+                  return(base*power(base,exp-1))
+          base=int(input("Enter base: "))
+          exp=int(input("Enter exponential value: ")
+          print("Result:",power(base,exp))
+        </pre>
 
     </div>
     <footer>
