@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Class vs Object | Software Interview Technical Questions </title>
+    <meta name="description" content="Creators of Approachable Open Source projects to allow anyone to start contribute to open source software, regardless of technical skill level.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <!-- Icon and Favicon Files -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../images/icons/favicon-16x16.png">
+    <link rel="manifest" href="../../../images/icons/manifest.json">
+    <link rel="mask-icon" href="../../../images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <a href="../../../index.html">
+        <img class="top-left-logo" src="../../../images/approachable-open-source-logo.png" alt="Approachable Open Source Logo" width="20px" />
+    </a>
+    <div class="text-container">
+
+            <a name="Section1"> What is NoSQL?</a>
+            <p>NoSQL encompasses a wide variety of different database technologies that were developed in response to a rise in the volume of data stored about users, objects and products. The frequency in which this data is accessed, and performance and processing needs. Relational databases, on the other hand, were not designed to cope with the scale and agility challenges that face modern applications, nor were they built to take advantage of the cheap storage and processing power available today.
+                </p> 
+
+                <a name="Section2"> What are the features of NoSQL?</a>
+                <p>When compared to relational databases, NoSQL databases are more scalable and provide superior performance, and their data model addresses several issues that the relational model is not designed to address:
+                        <ul>
+                            <li>Large volumes of structured, semi-structured, and unstructured data</li>
+                            <li>Agile sprints, quick iteration, and frequent code pushes</li>   
+                        <li>Object-oriented programming that is easy to use and flexible</li>
+                        <li>Efficient, scale-out architecture instead of expensive, monolithic architecture</li>
+                    </ul>
+                    </p> 
+
+
+        <a name="Section3">Explain the difference between NoSQL v/s Relational database?</a>
+<p>The history seem to look like this:
+        Google needs a storage layer for their inverted search index. They figure a traditional RDBMS is not going to cut it. So they implement a NoSQL data store, BigTable on top of their GFS file system. The major part is that thousands of cheap commodity hardware machines provides the speed and the redundancy.Everyone else realizes what Google just did.Brewers CAP theorem is proven. All RDBMS systems of use are CA systems. People begin playing with CP and AP systems as well. K/V stores are vastly simpler, so they are the primary vehicle for the research.
+        Software-as-a-service systems in general do not provide an SQL-like store. Hence, people get more interested in the NoSQL type stores.I think much of the take-off can be related to this history. Scaling Google took some new ideas at Google and everyone else follows suit because this is the only solution they know to the scaling problem right now. </p> 
+<a name="Section4"> How does NoSQL DB budget memory?</a>
+<p>
+        The Replication Node manages the data in a NoSQL DB store and is the main consumer of memory. The Java heap and cache size used by the Replication Node can be important performance factors. By default, the Replication Node heap and cache are calculated by NoSQL DB based on the amount of memory available to the Storage Node.
+        We recommend that you specify the available memory for a Storage Node using the -memory_mb flag for makebootconfig, or the memory_mb Storage Node parameter. If you do not define memory_mb, it will default to the memory available on the node. NoSQL DB will then use 85% of memory_mb as the heap for the Replication Node processes hosted by that Storage Node. If the Storage Node hosts more than one Replication Node, the memory will be divided evenly between all RNs.
+        
+        If the number of Replication Nodes on a Storage Node changes, the per-RN memory will be recalculated dynamically. The percentage used for heap is controlled by the rnHeapPercent Storage Node parameter. You can choose to override the default value of 85%.Each Replication Node uses a cache, and the size of that cache defaults to 70% of the Replication Node heap. You can override the 70% default by setting the rnCachePercent Replication Node parameter.
+        
+        The Replication Node heap can also be specified directly by setting the -Xmx in the Replication Node javaMiscParams parameter. Likewise, the Replication Node cache can be set directly with the cache Size Replication Node parameter. While that’s possible, it’s advisable to use the Storage Node memory_mb setting.
+        
+        As an example, suppose you specify that a Storage Node may use 3000 MB of memory, by setting memory_mb to 3000. If that Storage Node hosts two Replication Nodes, the heap for each RN will be (3000 * .85)/2 = 1275MB. Each RN cache will be (1275 * .70) = 892MB.
+</p>
+
+<a name="Section4">Some of the Models used in NOSQL DATABASES?</a>
+<p>
+    <ul>
+        <li>Key Value / Tuple Stores</li>
+        <li>Graph Databases</li>
+        <li>Multimodel Databases</li>
+        <li>Object Databases</li>
+    </ul>
+</p>
+
+</div>
+<footer>
+    <hr>
+    <p class="text-container">An
+        <a href="https://github.com/approachable-io/welcome">Approachable Open Source</a> project from
+        <a href="http://www.approachable.io">Approachable IO</a>
+    </p>
+</footer>
+</body>
+
+</html>
+
