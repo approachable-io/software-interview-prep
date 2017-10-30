@@ -22,5 +22,12 @@ Each checkbox can be filled if you replace the space with a lowercase x (as show
 - [ ] Corrected existing items
 - [ ] Other
 
+### Adding new question ? Please check if this PR fulfills these
+
+ - [ ] `<title>` tag has been updated
+ - [ ] `<h1>` tag has been updated
+ - [ ] new file is `kabob-case-like-this.html`
+ - [ ] link to question has been added in `technical.html` or `whiteboard.html`
+
 ### Other information:
 <!-- Any notes or other thoughts you believe will be helpful in understanding the included changes-->
