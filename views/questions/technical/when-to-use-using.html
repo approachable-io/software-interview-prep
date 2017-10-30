@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>What is the "using" statement and its purpose? | Software Interview Technical Questions </title>
+    <meta name="description" content="Creators of Approachable Open Source projects to allow anyone to start contribute to open source software, regardless of technical skill level.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <!-- Icon and Favicon Files -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../images/icons/favicon-16x16.png">
+    <link rel="manifest" href="../../../images/icons/manifest.json">
+    <link rel="mask-icon" href="../../../images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <a href="../../../index.html">
+        <img class="top-left-logo" src="../../../images/approachable-open-source-logo.png" alt="Approachable Open Source Logo" width="20px" />
+    </a>
+    <div class="text-container">
+        <h1>What is the "using" statement and its purpose?</h1>
+        
+        <a href="../../technical.html">
+            More technical interview questions
+        </a>
+        
+        <h2>What is the "using" statement</h2>
+        <p>It provides a convenient syntax that ensures the correct use of IDisposable objects. It ensures that the Dispose() method is called on the object even if an excepton occurs during code execution.</p>
+        
+        <h2>When should it be used</h2>
+        <p>It should be used whenever dealing with objects that implement IDisposable to ensure they are cleaned up properly after use. It also makes code easier to read and maintain.</p>
+
+        <h3>Code example</h3>
+        <ul>
+            <li>
+                <strong>Proper use</strong>
+<pre><code>using (var connection = new SqlConnection(connectionString))
+{
+    connection.Open();
+    // Do stuff here
+}</code></pre>
+            </li>
+            <li>
+                <strong>Equivalent code to the above example, but without the using statement</strong> - Avoid this
+<pre><code>var connection = new SqlConnection(connectionString);
+try
+{
+    connection.Open();
+    // Do stuff here
+}
+finally
+{
+    connection.Dispose();
+}</code></pre>
+            </li>
+        </ul>
+
+    </div>
+    <footer>
+        <hr>
+        <p class="text-container">
+            An
+            <a href="https://github.com/approachable-io/welcome">Approachable Open Source</a> project from
+            <a href="http://www.approachable.io">Approachable IO</a>
+        </p>
+    </footer>
+</body>
+
+</html>
