@@ -1,0 +1,32 @@
+{
+  "name": "software-interview-prep",
+  "version": "1.0.0",
+  "description": "Whiteboard and technical questions to prepare you for a software interviews",
+  "main": " ",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/approachable-io/software-interview-prep.git"
+  },
+  "keywords": [
+    "interviews",
+    "software",
+    "engineer",
+    "code",
+    "programming"
+  ],
+  "author": "LukeSchlangen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/approachable-io/software-interview-prep/issues"
+  },
+  "homepage": "https://github.com/approachable-io/software-interview-prep#readme",
+  "dependencies": {
+    "doctoc": "^1.3.0"
+  }
+}

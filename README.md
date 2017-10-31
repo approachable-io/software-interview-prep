@@ -1,6 +1,26 @@
 # software-interview-prep
 Approachable IO is a website created to help those prepping for interviewing for positions in Software Engineering. It is also a great resource for anyone looking to practice their skills by making Pull Requests.
 
+##Table of Contents
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Contribute an interview question](#contribute-an-interview-question)
+  - [Install Git](#install-git)
+  - [Fork the project](#fork-the-project)
+  - [Clone the fork](#clone-the-fork)
+  - [Install dependencies](#install-dependencies)
+  - [Creating a branch](#creating-a-branch)
+  - [Making your changes](#making-your-changes)
+  - [Committing changes](#committing-changes)
+  - [Pushing commits](#pushing-commits)
+  - [Stash and Pop](#stash-and-pop)
+  - [Making a Pull Request (PR)](#making-a-pull-request-pr)
+- [Want to contribute in another way?](#want-to-contribute-in-another-way)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Contribute an interview question
 If you're a Git/Github expert, feel free to skip some sections. If you have never made a Pull Request before, check out our [getting-started](https://github.com/approachable-io/getting-started) guide, which will show you how to create your Github account and make your first Open Source contribution. The following guide assumes you have already taken those steps. If you're ready, let's jump into contributing an interview question!
 
@@ -53,7 +73,7 @@ Once it finishes, you can `cd` into the directory with `cd software-interview-pr
 
 At this point, many projects will require you to install dependencies. Put simply, this is external software which is needed for the product to function correctly.
 
-Luckily, this repo does not require dependencies but if you would like to learn more, [click here.](supplemental-documentation/dependencies.md)
+Currently, this repo only has dependency named [doctoc](https://github.com/thlorenz/doctoc) which is only required for adding `Tables of Content`. But if you would like to learn more, [click here.](supplemental-documentation/dependencies.md)
 
 ### Creating a branch
 
@@ -183,7 +203,7 @@ way outside the scope of this guide.
 
 ![Git Push](images/command-line/push-command.png)
 
-### Stash & Pop
+### Stash and Pop
 
 Sometimes, you make a few changes, and you're not quite ready to commit them, but you need to store them somewhere
 safe. This is the time for stashing and popping!
