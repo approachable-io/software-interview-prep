@@ -1,8 +1,8 @@
-##Files
+##Folders
 .idea
 node_modules
 
-#Folders
+##Files
 *.iml
 .DS_Store
 .vs
