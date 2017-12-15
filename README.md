@@ -24,8 +24,12 @@ Approachable IO is a website created to help those prepping for interviewing for
 ## Contribute an interview question
 If you're a Git/Github expert, feel free to skip some sections. If you have never made a Pull Request before, check out our [getting-started](https://github.com/approachable-io/getting-started) guide, which will show you how to create your Github account and make your first Open Source contribution. The following guide assumes you have already taken those steps. If you're ready, let's jump into contributing an interview question!
 
+[Back to Top](#table-of-contents)
+
 ### Install Git
 Here is a detailed explanation of [how to install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+
+[Back to Top](#table-of-contents)
 
 ### Fork the project
 A fork is a copy of a project. In this case, you will be copying the project [software-interview-prep](https://github.com/approachable-io/software-interview-prep), making a change to that copy, and then making a Pull Request. A Pull Request is a request for the original project to include your changes.
@@ -41,6 +45,8 @@ If everything goes smoothly it should look like this for a few seconds:
 And then it should look like this: ![After Fork Screen](images/post-fork.png)
 
 The difference between the original repository and the new repository you created is that your username should appear in the top left. If your username is `grace-hopper`, it should say something like `grace-hopper / software-interview-prep` and the line below it should read `forked from approachable-io / software-interview-prep`.
+
+[Back to Top](#table-of-contents)
 
 ### Clone the fork
 
@@ -69,11 +75,15 @@ Once it finishes, you can `cd` into the directory with `cd software-interview-pr
 
 ![Git Clone](images/command-line/clone-commmand.png)
 
+[Back to Top](#table-of-contents)
+
 ### Install dependencies
 
 At this point, many projects will require you to install dependencies. Put simply, this is external software which is needed for the product to function correctly.
 
 Currently, this repo only has dependency named [doctoc](https://github.com/thlorenz/doctoc) which is only required for adding `Tables of Content`. But if you would like to learn more, [click here.](supplemental-documentation/dependencies.md)
+
+[Back to Top](#table-of-contents)
 
 ### Creating a branch
 
@@ -102,6 +112,8 @@ git checkout <branch name>
 ```
 
 ![Git Branch](images/command-line/branch-command.png)
+
+[Back to Top](#table-of-contents)
 
 ### Making your changes
 
@@ -146,6 +158,8 @@ To exit this screen press `q`.
 
 ![Git Status](images/command-line/status-command.png)
 
+[Back to Top](#table-of-contents)
+
 ### Committing changes
 
 Once you've staged your changes, you're ready to commit them. Committing is marking a change in your project, and you
@@ -168,6 +182,8 @@ git commit -ma "made changes"
 The `a` means stage all changes. This removes the need to `git add .`, as it does this already.
 
 ![Git Commit](images/command-line/commit-command.png)
+
+[Back to Top](#table-of-contents)
 
 ### Pushing commits
 
@@ -203,6 +219,8 @@ way outside the scope of this guide.
 
 ![Git Push](images/command-line/push-command.png)
 
+[Back to Top](#table-of-contents)
+
 ### Stash and Pop
 
 Sometimes, you make a few changes, and you're not quite ready to commit them, but you need to store them somewhere
@@ -230,6 +248,8 @@ git stash pop
 And your changes are there again.
 
 ![Git Pop](images/command-line/pop-command.png)
+
+[Back to Top](#table-of-contents)
 
 ### Making a Pull Request (PR)
 
@@ -272,5 +292,9 @@ Once your PR is approved, your code will be merged into the original repo. Congr
 
 ![Post PR Creation](images/post-pr-creation.png)
 
+[Back to Top](#table-of-contents)
+
 ## Want to contribute in another way?
 Anyone can help make this project better - check out [issues](https://github.com/approachable-io/software-interview-prep/issues)!
+
+[Back to Top](#table-of-contents)
