@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Number swap without temporary variable | Software Interview Whiteboard Questions </title>
+    <meta name="description" content="Creators of Approachable Open Source projects to allow anyone to start contribute to open source software, regardless of technical skill level.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <!-- Icon and Favicon Files -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../images/icons/favicon-16x16.png">
+    <link rel="manifest" href="../../../images/icons/manifest.json">
+    <link rel="mask-icon" href="../../../images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <a href="../../../index.html">
+        <img class="top-left-logo" src="../../../images/approachable-open-source-logo.png" alt="Approachable Open Source Logo" width="20px" />
+    </a>
+    <div class="text-container">
+        <h1>Number swap without temporary variable</h1>
+        <a href="../../whiteboard.html">
+            More whiteboard interview questions
+        </a>
+        
+        <h3>Question:</h3>
+        <p>Using C#, swap the values of x and y without using a tempoary or third variable.  x = 20 and y = 10</p>
+        
+        <h4>Approach: </h4>
+        <p>Most programming languages have a feature to iterate over a string. Utilize it creatively to check if the string is the same right-to-left and left-to-right.</p>
+        
+        <div class="hidden-answer">
+            <input type="checkbox" id="number-swap-answer">
+            <label for="number-swap-answer">Click to see an answer written in C#</label>
+            <div class="content">
+                <pre>
+                 using System; 
+                   
+                 class NumberSwap { 
+                 public static void Main() 
+                     { 
+                         int x = 20; 
+                         int y = 10; 
+                         Console.WriteLine("Before swap:"); 
+                         Console.WriteLine("x value: " + x); 
+                         Console.WriteLine("y value: " + y); 
+                         x = x + y; 
+                         y = x - y; 
+                         x = x - y; 
+                         Console.WriteLine("After swap:"); 
+                         Console.WriteLine("x value: " + x); 
+                         Console.WriteLine("y value: " + y); 
+                     } 
+                 } 
+                </pre>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <hr>
+        <p class="text-container">An
+            <a href="https://github.com/approachable-io/welcome">Approachable Open Source</a> project from
+            <a href="http://www.approachable.io">Approachable IO</a>
+        </p>
+    </footer>
+</body>
+
+</html>
