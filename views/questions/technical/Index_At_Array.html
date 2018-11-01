@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -27,16 +27,19 @@
             More technical interview questions
         </a>
         <p>The array index in C starts with 0 because in C the name of an array is a pointer, which is a reference to a memory location. Therefore, an expression *(arr + n) or arr[n] locates an element n-locations away from the starting location because the index is used as an offset. Likewise, the first element of the array is exactly contained by the memory location that array refers (0 elements away), so it should be denoted as *(arr + 0) or *(arr) or arr[0].</p>
-        <p>C programming language has been designed this way, so indexing from 0 is inherent to the language.
+        <p>
+            C programming language has been designed this way, so indexing from 0 is inherent to the language.
 
-However, some languages give user a choice to start index from zero or any other positive integer. For an example, in Fortran, when an array is declared with integer a(10) (an array of 10 integer elements), the index starts from 1 and ends at 10. However, this behavior can be overridden using a statement like, integer a(0:9), declaring an array with indices from 0 to 9.</p>
-    <footer>
-        <hr>
-        <p class="text-container">An
-            <a href="https://github.com/approachable-io/welcome">Approachable Open Source</a> project from
-            <a href="http://www.approachable.io">Approachable IO</a>
+            However, some languages give user a choice to start index from zero or any other positive integer. For an example, in Fortran, when an array is declared with integer a(10) (an array of 10 integer elements), the index starts from 1 and ends at 10. However, this behavior can be overridden using a statement like, integer a(0:9), declaring an array with indices from 0 to 9.
         </p>
-    </footer>
+        <footer>
+            <hr>
+            <p class="text-container">
+                An
+                <a href="https://github.com/approachable-io/welcome">Approachable Open Source</a> project from
+                <a href="http://www.approachable.io">Approachable IO</a>
+            </p>
+        </footer>
 </body>
 
 </html>

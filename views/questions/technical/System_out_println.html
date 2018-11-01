@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -27,26 +27,30 @@
             More technical interview questions
         </a>
         <p>
-          System.out.println(exp); is used to display messages to the command window. If we go further to the functioning of System.out.println() statement, we will find that:
+            System.out.println(exp); is used to display messages to the command window. If we go further to the functioning of System.out.println() statement, we will find that:
 
-  <br/>1. System is a class built into the core Java language and it is defined within the java.lang package.
+            <br />1. System is a class built into the core Java language and it is defined within the java.lang package.
 
-  <br/>2. out is a public static member of the System class, of type PrintStream.
-  Thus, the expression System.out refers to an object of type PrintStream.
+            <br />2. out is a public static member of the System class, of type PrintStream.
+            Thus, the expression System.out refers to an object of type PrintStream.
 
-  <br/>3. The (overloaded) println method of the PrintStream class accepts an expression as an argument and displays it in String form to the standard output window (i.e., the command-line window from which the program was invoked). There are multiple println overloaded methods with different arguments. Every println makes a call to print method and adds a newline.
-  <br/> Internally, print calls write() and write() takes care of displaying data to the standard output window.</p>
-  <p>We therefore don't need to ever instantiate a System object to print messages to the screen; we simply call the println method on the System class's public static PrintStream member, out.
+            <br />3. The (overloaded) println method of the PrintStream class accepts an expression as an argument and displays it in String form to the standard output window (i.e., the command-line window from which the program was invoked). There are multiple println overloaded methods with different arguments. Every println makes a call to print method and adds a newline.
+            <br /> Internally, print calls write() and write() takes care of displaying data to the standard output window.
+        </p>
+        <p>
+            We therefore don't need to ever instantiate a System object to print messages to the screen; we simply call the println method on the System class's public static PrintStream member, out.
 
-<br/>Now, you might be thinking that can we create an object of PrintStream and call println function with that object to print to the standard output (usually the console)? The answer is NO. When you want to print to the standard output, then you will use System.out. <br/>That's the only way. Instantiating a PrintStream will allow you to write to a File or OutputStream you specify, but don't have anything to do with the console.
+            <br />Now, you might be thinking that can we create an object of PrintStream and call println function with that object to print to the standard output (usually the console)? The answer is NO. When you want to print to the standard output, then you will use System.out. <br />That's the only way. Instantiating a PrintStream will allow you to write to a File or OutputStream you specify, but don't have anything to do with the console.
 
-<br/>However, you can pass System.out to PrintStream and then invoke println on PrintStream object to print to the standard output</p>
+            <br />However, you can pass System.out to PrintStream and then invoke println on PrintStream object to print to the standard output
+        </p>
         <hr>
-        <p class="text-container">An
+        <p class="text-container">
+            An
             <a href="https://github.com/approachable-io/welcome">Approachable Open Source</a> project from
             <a href="http://www.approachable.io">Approachable IO</a>
         </p>
-    </footer>
+        </footer>
 </body>
 
 </html>
