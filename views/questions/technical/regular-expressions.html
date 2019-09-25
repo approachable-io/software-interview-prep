@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Regular Expressions | Software Interview Technical Questions</title>
+</head>
+<body>
+    <h1>Regular Expressions (Regex)</h1>
+    <a href="../../technical.html">
+        More technical interview questions
+    </a>
+
+    <h3>What are regular expressions?</h3>
+    <p>They are strings and characters used as a search pattern which has multiple uses such
+        as for searching text, matching certain words and values, or replacing text.
+    </p>
+
+    <h3>How do you use regular expressions?</h3>
+
+    <p>Regex characters are placed in diagonal brackets '/regex characters/'.
+        There are two main methods to test expressions with </p>
+    
+    <h4>1) .test()</h4>
+    <p>This method will return a boolean. First, you will define a set of characters you want to match </p>
+    <code>let regexEx = /char/</code>
+    <p>Then, use the test method on <code>regexEx</code>, it will return true if characters
+    match, false if they dont </p>
+    <code>regexEx.test('character')</code>
+    <p>The above example will return true since 'char' is within the 'character' argument.</p>
+
+    <h4>2) .match()</h4>
+    <p>This take an expression to match as an argument, and will return an array with the first value being the match found.
+        There are multiple expressions that can be used, check out <a href="https://regex101.com/">regex101</a> to see different expressions 
+    which can be used and practice with them. </p>
+    <p>In the following example, a 'wildcard' is used which uses a period (.) to match any single character.</p>
+    <code>let regexEx = /./</code><br>
+    <code>let stringEx = 'character'</code><br>
+    <code>stringEx.match(regexEx)</code> <code><i>  //[ 'c', index: 0, input: 'character', groups: undefined ]</i></code>
+    <p>The above example returns an array, where the first value will be the value returned, which
+        in the above case is 'c' because the period matches the first character and only that character.
+    </p>
+
+
+    
+
+
+</body>
+</html>
