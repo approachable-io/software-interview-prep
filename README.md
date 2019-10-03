@@ -298,3 +298,8 @@ Once your PR is approved, your code will be merged into the original repo. Congr
 Anyone can help make this project better - check out [issues](https://github.com/approachable-io/software-interview-prep/issues)!
 
 [Back to Top](#table-of-contents)
+
+## Want to have even more fun with code?
+This project is supported by [Code Championship](https://www.codechampionship.com) - Competitive Computer Coding. You can build your own bot to go head to head against others here: [codechampionship.com/code](https://www.codechampionship.com/code/)
+
+[Back to Top](#table-of-contents)
