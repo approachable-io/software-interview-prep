@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Using Visual Studio Code to Add a New Question](#using-visual-studio-code-to-add-a-new-question)
+    - [Add your project to VS Code](#add-your-project-to-vs-code)
+    - [Add a new HTML file for your question](#add-a-new-html-file-for-your-question)
+    - [Adding your finished question to the list](#adding-your-finished-question-to-the-list)
+    - [Next steps](#next-steps)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Using Visual Studio Code to Add a New Question
 
 This guide will walk you through the process of adding a new question

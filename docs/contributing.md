@@ -1,3 +1,19 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Contributing to Approachable IO](#contributing-to-approachable-io)
+  - [What is an Approachable Open Source Project](#what-is-an-approachable-open-source-project)
+    - [An Approachable Open Source project will:](#an-approachable-open-source-project-will)
+  - [Code of Conduct](#code-of-conduct)
+  - [How can I contribute](#how-can-i-contribute)
+  - [Your First Contribution](#your-first-contribution)
+  - [Submitting an Issue](#submitting-an-issue)
+  - [What to include in issues](#what-to-include-in-issues)
+  - [What to include in pull requests](#what-to-include-in-pull-requests)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Contributing to Approachable IO
 
 First off, thank you for considering contributing to our projects.  If this is one of your first contributions, welcome to the open source community!
