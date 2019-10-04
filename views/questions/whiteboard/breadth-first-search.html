@@ -14,7 +14,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../../../images/icons/favicon-16x16.png">
     <link rel="manifest" href="../../../images/icons/manifest.json">
     <link rel="mask-icon" href="../../../images/icons/safari-pinned-tab.svg" color="#5bbad5">
-    <link href="../../../assets/css/rainbow.css" rel="stylesheet" type="text/css">
     <meta name="theme-color" content="#ffffff">
 </head>
 
@@ -35,30 +34,10 @@
         <p>Create tree using dictionary in python,than use the property of list (append or pop).</p>
         
         <div class="hidden-answer">
-            <input type="checkbox" id="number-swap-answer">
-            <label for="number-swap-answer">Click to see an answer written in python</label>
+            <input type="checkbox" id="breadth-first-search">
+            <label for="breadth-first-search">Click to see an answer written in python</label>
             <div class="content">
-                    <pre><code data-language="python">
-                            from collections import deque
-
-                            def bfs(tree,root):
-                                visited = []
-                                connected = []
-                                 # visited.append(root)
-                                connected.append(root)
-                                while connected:
-                                    node = connected.pop(0)
-                                    if node <= len(tree.keys()):
-                                        for nextnode in tree[node]:
-                                            connected.append(nextnode)
-                                        visited.append(node)
-                                    else:
-                                        visited.append(node)
-                                    print("Visited : ",visited)
-                                    print("Connected :",connected)
-                            tree = {1:[2,3,4],2:[5,6],3:[7,8],4:[9]}
-                            output = bfs(tree,1)
-                    </code></pre>
+                <script src="https://gist.github.com/vinodpatidar123/649afd8861ab41454c2d1b28a5bcca5a.js"></script>
             </div>
         </div>
     </div>
@@ -69,7 +48,6 @@
             <a href="http://www.approachable.io">Approachable IO</a>
         </p>
     </footer>
-<script src="../../../assets/js/rainbow-custom.min.js"></script>
 </body>
 
 </html>
