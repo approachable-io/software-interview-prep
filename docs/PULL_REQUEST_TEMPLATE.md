@@ -1,14 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [Please check if this PR fulfills these](#please-check-if-this-pr-fulfills-these)
-- [What kind of change does this PR introduce?](#what-kind-of-change-does-this-pr-introduce)
-- [What is the new behavior (if this is a feature change)?](#what-is-the-new-behavior-if-this-is-a-feature-change)
-- [Adding new question ? Please check if this PR fulfills these](#adding-new-question--please-check-if-this-pr-fulfills-these)
-- [Other information:](#other-information)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!-- 
 Please use the below as a GUIDE not a Requirement.  
