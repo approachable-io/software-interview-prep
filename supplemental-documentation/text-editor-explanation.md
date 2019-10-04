@@ -1,11 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [Text Editor Explanation](#text-editor-explanation)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # Text Editor Explanation
 
 VS CODE!?!?! Flame war commence!!!! I know, I know. There are a million different options here, and we can argue forever about the "Best" editor (spoiler: There isn't one), but we're making the call here to use Visual Studio Code because:
