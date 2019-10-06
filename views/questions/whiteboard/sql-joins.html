@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>T-SQL Joining Tables | Software Interview Whiteboard Questions </title>
+    <meta name="description" content="Creators of Approachable Open Source projects to allow anyone to start contribute to open source software, regardless of technical skill level.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <!-- Icon and Favicon Files -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../images/icons/favicon-16x16.png">
+    <link rel="manifest" href="../../../images/icons/manifest.json">
+    <link rel="mask-icon" href="../../../images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <a href="../../../index.html">
+        <img class="top-left-logo" src="../../../images/approachable-open-source-logo.png" alt="Approachable Open Source Logo" width="20px" />
+    </a>
+    <div class="text-container">
+        <h1>T-SQL Joining Tables</h1>
+        <a href="../../whiteboard.html">
+            More whiteboard interview questions
+        </a>
+        <h3>Question:</h3>
+
+        <p> Based on the two tables listed below, write a SQL query to return a list of all invoices.  Each invoice should 
+            return with an ID, billing date, customer's name, an dthe name of the customer that refered them, if available.            
+        </p>
+
+        <img src="../../../images/whiteboard-answers/table-layout.png" alt="SQL Table Diagram">
+
+        <h4>Approach: </h4>
+
+        <p>This question is a rather simple one and is normally used to simply see the programming style of each applicant.  
+            A few key things to consider when writing your statement:
+
+            <ul>
+                <li>How many joins are needed?  Should they be inner or outer joins?</li>
+                <li>Should you use a table alias? If so, how simple should it be?</li>
+                <li>Are column names ambiguous and need some additonal clarifiaciton / alias?</li>
+            </ul>
+
+        </p>
+
+
+        <div class="hidden-answer">
+            <input type="checkbox" id="sql-join-answer1">
+            <label for="sql-join-answer1">Click to see one answer.</label>
+            <div class="content">
+                <code>
+                        SELECT i.Id, i.BillingDate, c.Name, r.Name AS ReferredByName <br/>
+                        FROM Invoices i <br/>
+                         INNER JOIN Customers c ON i.CustomerId = c.Id <br/>
+                         LEFT JOIN Customers r ON c.ReferredBy = r.Id <br/>
+                        ORDER BY i.BillingDate; 
+                </code>
+                <p> Note: This first join assumes that all invoices will have a corresponding customer represented.  This may not 
+                    actually be the case and would exclude invoices with a "bad" cusotmer id.  If these are not important, then the
+                    above query will work.
+                </p>
+            </div>
+
+            <input type="checkbox" id="sql-join-answer2">
+            <label for="sql-join-answer2">Click to see a second answer.</label>
+            <div class="content">
+                <code>
+                        SELECT i.Id, i.BillingDate, c.Name, r.Name AS ReferredByName <br/>
+                        FROM Invoices i <br/>
+                         LEFT JOIN Customers c ON i.CustomerId = c.Id <br/>
+                         LEFT JOIN Customers r ON c.ReferredBy = r.Id <br/>
+                        ORDER BY i.BillingDate;
+                </code>
+                <p> Using double left joins will ensure that all invoices will display even if they do not have a matching customer
+                    listed in the customers table.  These may or may not be important to the client.  They may also wish to have the 
+                    NULL values replaced with different values if the results are going to be client facing.  In this case you could
+                    include the ISNULL funciton.
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+    <footer>
+        <hr>
+        <p class="text-container">
+            An
+            <a href="https://github.com/approachable-io/welcome">Approachable Open Source</a> project from
+            <a href="http://www.approachable.io">Approachable IO</a>
+        </p>
+    </footer>
+</body>
+
+</html>
