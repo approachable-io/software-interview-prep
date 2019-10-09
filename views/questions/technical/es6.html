@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>What is ECMAScript 6? | Software Interview Technical Questions </title>
+    <meta name="description" content="Creators of Approachable Open Source projects to allow anyone to start contribute to open source software, regardless of technical skill level.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <!-- Icon and Favicon Files -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../images/icons/favicon-16x16.png">
+    <link rel="manifest" href="../../../images/icons/manifest.json">
+    <link rel="mask-icon" href="../../../images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <a href="../../../index.html">
+        <img class="top-left-logo" src="../../../images/approachable-open-source-logo.png" alt="Approachable Open Source Logo" width="20px" />
+    </a>
+    <div class="text-container">
+        
+        <h2>What is ECMAScript 6?</h2>
+        <p>ECMAScript 6 is also known as ES6 and ECMAScript 2015.</p>
+        <p>Some people call it JavaScript 6.</p>
+        <p>ES6 refers to version 6 of the ECMA Script programming language. ECMA Script is the standardized name for JavaScript, and version 6 is the next version after version 5, which was released in 2011. It is a major enhancement to the JavaScript language, and adds many more features intended to make large-scale software development easier. Both ES6 and ES2015 names used for the version of JavaScript that introduces arrow functions, template strings, and Promises</p>
+
+        
+		<img src="../../../images/es6.png" align="right" width="500px">
+        <h3>List Some New Features Of Es6?</h3>
+        <ul>
+            <li>Support for constants (also known as “immutable variables”)</li>
+            <br>
+            <li>Block-Scope support for both variables, constants, functions</li>
+            <br>
+            <li>Arrow Functions</li>
+            <br>
+            <li>Extended Parameter Handling</li>
+            <br>
+            <li>Template Literals</li>
+            <br>
+            <li>Extended Literals</li>
+            <br>
+            <li>Enhanced Regular Expression</li>
+            <br>
+            <li>Enhanced Object Properties</li>
+            <br>
+            <li>Destructuring Assignment</li>
+            <br>
+            <li>Modules, Classes, Iterators, Generators</li>
+            <br>
+            <li>Support for Map/Set & Weak Map/Weak Set</li>
+            <br>
+            <li>Promises, Meta-Programming, Internationalization & Localization.</li>
+        </ul>
+
+        <h3>Explain Constants In Es6?</h3>
+        <p> 
+            Constants also are known as immutable variables are a special type of variables whose content is not changed. In Es6 a constant is defined using const keyword. Constants in Es6 enable protection to overwrite a variable value, improve performance and helps programmers to write readable and cleaner code.
+        </p>
+        <p><b>Example:</b></p>
+        <p>In Es6</p>
+        <p>const WEBSITE_URL = "http://www.abc.com";</p>
+        <p>WEBSITE_URL="new url"; // generate an error;</p>
+        <p>console.log (WEBSITE_URL);</p>
+        <p>In prior version of Es6</p>
+        <p>// and only in global context and not in a block scope</p>
+        <p>Object.defineProperty(type of global === "object" ? global : window, "WEBSITE_URL", {</p>
+        <p>value: "http://www.abc.com", enumerable: true,</p>
+        <p>writable:     false,</p>
+        <p>configurable: false</p>
+        <p>});</p>
+        <p>console.log (WEBSITE_URL);</p>
+
+        <h3>What Are Template Literals In Es6?</h3>
+
+        <p>Template literals are the string with embedded code and variables inside. Template literal allows concatenation and interpolation in much more comprehensive and clear in comparison with prior versions of Ecma script.</p>
+        <p><b>Let see an example of concatenating a string in javascript.:</b></p>
+        <p>var a="Hello";</p>
+        <p>var b="John";</p>
+        <p>var c = a+ " " + b;</p>
+        <p>console.log (WEBSITE_URL);</p>
+        <p>Console.log(c); //outputs Hello John;</p>
+        <p>In ES6 concatenation and interpolation is done by back tick “ in a single line. To interpolate a variable simply put in to {} braces forwarded by $ sign.>/p></p>
+        <p>// In ES6</p>
+        <p>let a="Hello";</p>
+        <p>let b="John";</p>
+        <p>let c=`${a} ${b}`;</p>
+        <p>console.log(c); //outputs Hello John;</p>
+
+        <h3>What Is Spread Operator In Es6?</h3>
+
+        <p>Spread Operator provides a new way to manipulate array and objects in Es6.A Spread operator is represented by … followed by the variable name.</p>
+        <p><b>Example:</b></p>
+        <p>let b=[1,2,3,...a,10];</p>
+        <p>console.log(b); // [1,2,3,7,8,9,10]</p>
+        <p>So spread operator spreads the contents of variable a and concatenates it in b.</p>
+        <p>Another Example</p>
+        <p>function print(...z){</p>
+        <p>console.log (z);</p>
+        <p>}</p>
+        <p>print(1,2,3,4);//[1,2,3,4]</p>
+        <p>let b="John";</p>
+        <p>let c=`${a} ${b}`;</p>
+        <p>console.log(c); //outputs Hello John;</p>
+
+        <h3>How To Create A Javascript Class In Es6?</h3>
+        <p>
+            In Es6 you can create a class using the Class keyword. Below is sample javascript class in ES6.
+        </p>
+        <p>class in ES6.</p>
+        <p>class User{</p>
+        <p>constructor(name, age) {</p>
+        <p>this.name  = name;</p>
+        <p>this. age = age;</p>
+        <p>}</p>
+        <p>get Data() {</p>
+        <p>console.log(this.name + " is " + this. age + " years old !");</p>
+        <p>}</p>
+        <p>}</p>
+        <p>var user = new User("foo", 7);</p>
+        <p>s1.getData();</p>
+
+        <h3>Explain Destructuring Assignment In Es6?</h3>
+        <p>
+            In Es6 you can create a class using the Class keyword. Below is sample javascript class in ES6.
+        </p>
+        <p><b>Example:</b></p>
+        <p>let full name =['John','Deo'];</p>
+        <p>let [first_name,last_name]=full name;</p>
+        <p>console.log (first_name,last_name);</p>
+        <p>// outputs John Deo</p>
+        <p>Another example</p>
+        <p>let c=[100,200,330,400];</p>
+        <p>let [a,...b]=c;</p>
+        <p>console.log (a,b);</p>
+        <p>// outputs 100 [200, 330, 400]</p>
+
+    </div>
+    <footer>
+        <hr>
+        <p class="text-container">
+            An
+            <a href="https://github.com/approachable-io/welcome">Approachable Open Source</a> project from
+            <a href="http://www.approachable.io">Approachable IO</a>
+        </p>
+    </footer>
+</body>
+
+</html>
