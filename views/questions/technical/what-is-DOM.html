@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>What is the "using" statement and its purpose? | Software Interview Technical Questions </title>
+    <meta name="description" content="Creators of Approachable Open Source projects to allow anyone to start contribute to open source software, regardless of technical skill level.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <!-- Icon and Favicon Files -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../images/icons/favicon-16x16.png">
+    <link rel="manifest" href="../../../images/icons/manifest.json">
+    <link rel="mask-icon" href="../../../images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <a href="../../../index.html">
+        <img class="top-left-logo" src="../../../images/approachable-open-source-logo.png" alt="Approachable Open Source Logo" width="20px" />
+    </a>
+    <div class="text-container">
+        <h1>What is the Document Object Model (DOM)?</h1>
+
+        <a href="../../technical.html">
+            More technical interview questions
+        </a>
+
+        <h2>What is the "Document Object Model" or DOM?</h2>
+
+        <p>The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.
+
+        A Web page is a document. This document can be either displayed in the browser window or as the HTML source. But it is the same document in both cases. The Document Object Model (DOM) represents that same document so it can be manipulated. The DOM is an object-oriented representation of the web page, which can be modified with a scripting language such as JavaScript.</p>
+
+        <h2>Why is it important to web development?</h2>
+        <p>All of the properties, methods, and events available for manipulating and creating web pages are organized into objects (for example, the document object that represents the document itself, the table object that implements the special HTMLTableElement DOM interface for accessing HTML tables, and so forth). This documentation provides an object-by-object reference to the DOM.
+
+        The modern DOM is built using multiple APIs that work together. The core DOM defines the objects that fundamentally describe a document and the objects within it. This is expanded upon as needed by other APIs that add new features and capabilities to the DOM. For example, the HTML DOM API adds support for representing HTML documents to the core DOM.</p>
+
+        <h3>Code example</h3>
+        <ul>
+            <li>
+                <strong>Proper use</strong>
+                    <pre>
+                        <code>var paragraphs = document.getElementsByTagName("p");
+                    // paragraphs[0] is the first <p> element
+                    // paragraphs[1] is the second <p> element, etc.
+                    alert(paragraphs[0].nodeName);
+                        </code>
+                    </pre>
+             </li>
+        </ul>
+    </div>
+    <footer>
+        <hr>
+        <p class="text-container">
+            An
+            <a href="https://github.com/approachable-io/welcome">Approachable Open Source</a> project from
+            <a href="http://www.approachable.io">Approachable IO</a>
+        </p>
+    </footer>
+</body>
+
+</html>
