@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>What is Flexbox and Its Purpose | Software Interview Technical Questions </title>
+    <meta name="description" content="Creators of Approachable Open Source projects to allow anyone to start contribute to open source software, regardless of technical skill level.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <!-- Icon and Favicon Files -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../images/icons/favicon-16x16.png">
+    <link rel="manifest" href="../../../images/icons/manifest.json">
+    <link rel="mask-icon" href="../../../images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <a href="../../../index.html">
+        <img class="top-left-logo" src="../../../images/approachable-open-source-logo.png" alt="Approachable Open Source Logo" width="20px" />
+    </a>
+    <div class="text-container">
+        <h1>What is Flexbox and Its Purpose</h1>
+        <br>
+
+        <a href="../../technical.html">
+            More technical interview questions
+        </a>
+        <br><br>
+
+        <h2>What is FLEXBOX</h2>
+        <p>Flexbox is a new layout mode in CSS3. The previous version of CSS defined four layout modes:</p>
+
+        <ul>
+            <li><b>block layout</b> for laying out documents</li>
+            <br>
+            <li><b>inline layout</b> for laying out text</li>
+            <br>
+            <li><b>table layout</b> for laying 2D tabular data</li>
+            <br>
+            <li><b>positioned layout</b> for explicit positioning</li>
+        </ul>
+
+        <h2>CSS3 Layouts</h2>
+        <p>CSS3 introduced two new layout methods as an alternative to abusing floats and tables:</p>
+
+        <ul>
+            <li><b><u>Grid layout</u></b> divides space into columns & rows. Like table layouts, but better! The Grid layout spec is still being developed, and isn’t ready for use yet.</li>
+            <br>
+            <li><b><u>Flexbox layout</u></b> distributes space along a single column or row. Like float layouts, but better! The Flexbox spec is finished and enjoys excellent browser support today.</li>
+        </ul>
+
+        <h2>Spec Versions</h2>
+        <p>There are three versions of the spec, but only one of them really matters:</p>
+        <ul>
+            <li>
+                The <b><strong>old 2009 spec</strong></b> — display: box — is no longer relevant.
+            </li>
+            <br>
+            <li>
+                The <b><strong>2011 "tweener" spec</strong></b> — display: flexbox — was a draft spec, only implemented in IE10. You should avoid it if possible.
+            </li>
+            <br>
+            <li>
+                The <b><strong>final 2012 spec</strong></b> — display: flex — is the new hotness, with excellent browser support (see below).
+            </li>
+        </ul>
+        <p>Note: Each spec used a different keyword for the <span style="background-color: lightblue; padding: 2px;">display</span> property, which means if you’re reading an article about Flexbox, it’s easy to figure out which version of the spec they’re discussing. If you see anything other than <span style="background-color: lightblue; padding: 2px;">display:flex</span>, it’s an older article and can be ignored.</p>
+        
+        <h2>Flexbox Properties</h2>
+        <p>There are too many properties to get into here, so I will refer you to the excellent <b><u>CSS Tricks Flexbox Guide</u></b>, which does a great job of introducing all the properties.</p>
+        <br>
+        <p>Don’t be overwhelmed. There are a lot of options, but Flexbox includes a set of intelligent defaults so you can create a powerful layout with very little code. Here’s an example:</p>
+        <br>
+        <div style="width: 600px; height: 100%; background: lightgray; display: flex; align-items: center; padding-left: 20px;">
+            <p>.flex-container {<br>
+                display: flex;<br>
+                }</p>
+        </div>
+        <br>
+        <p>That one line of code does all the following:</p>
+        <br>
+        <ul>
+            <li>Treats <span style="background-color: lightblue;padding: 2px;">.flex-container</span> as a flex container.</li>
+            <br>
+            <li>Treats all direct children of <span style="background-color: lightblue;padding: 2px;">.flex-container</span> as flex items.</li>
+            <br>
+            <li>Flex items will be laid out in a horizontal line.</li>
+            <br>
+            <li>Flex items will be laid out in source order.</li>
+            <br>
+            <li>Flex items will be laid out starting from the left side of the flex container.</li>
+            <br>
+            <li>Flex items will be sized based on their regular <span style="background-color: lightblue;padding: 2px;">width</span> properties.</li>
+            <br>
+            <li>If there’s not enough space for all the flex items, they will be allowed to shrink horizontally until they all fit.</li>
+            <br>
+            <li>If they need to shrink, each item will shrink equally.</li>
+            <br>
+            <li>Flex items will all stretch vertically to match the height of the tallest flex item.</li>
+        </ul>
+        <p>That’s quite a bit of logic for a single line of CSS! You can change any of those, but I wanted to give you a taste of how powerful Flexbox can be with no extra work.</p>
+        <h2>Browser Support</h2>
+        <p>As of August 2015, browser support is excellent! The current Flexbox spec is fully supported in all modern browsers, including mobile, IE11 and Edge.</p>
+    </div>
+    <footer>
+        <hr>
+        <p class="text-container">
+            An
+            <a href="https://github.com/approachable-io/welcome">Approachable Open Source</a> project from
+            <a href="http://www.approachable.io">Approachable IO</a>
+        </p>
+    </footer>
+</body>
+
+</html>
